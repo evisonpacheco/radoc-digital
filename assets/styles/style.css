@@ -48,7 +48,7 @@ table {
   border-spacing: 0;
 }
 
-body {
+.bodylogin {
   align-items: center;
   background-color: #008A8A;
   display: flex;
@@ -57,15 +57,15 @@ body {
   height: calc(100vh - 2rem);
   padding: 1rem;
 }
-body header {
+.bodylogin .headerlogin {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-body header .header__image {
+.bodylogin .headerlogin .header__image {
   width: 6rem;
 }
-body header .header__title {
+.bodylogin .headerlogin .header__title {
   color: #FFFFFF;
   font: 1.8rem "Arial";
   margin: 1rem 0 0;
@@ -102,7 +102,21 @@ body header .header__title {
   cursor: pointer;
 }
 
-footer .footer__text {
+.footerlogin .footer__text {
   color: #FFFFFF;
   font: 1rem "Arial";
+}
+
+#body {
+  background-color: #008A8A;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#body header {
+  align-items: center;
+  background-color: #27A844;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

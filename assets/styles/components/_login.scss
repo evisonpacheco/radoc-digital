@@ -1,4 +1,4 @@
-body {
+.bodylogin {
   align-items: center;
   background-color: #008A8A;
   display: flex;
@@ -7,7 +7,7 @@ body {
   height: calc(100vh - 2rem);
   padding: 1rem;
 
-  header {
+  .headerlogin {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -59,7 +59,7 @@ body {
   }
 }
 
-footer {
+.footerlogin {
   .footer__text {
     color: #FFFFFF;
     font: 1rem 'Arial';
