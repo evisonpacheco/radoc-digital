@@ -62,10 +62,10 @@ table {
   display: flex;
   flex-direction: column;
 }
-.bodylogin .headerlogin .header__image {
+.bodylogin .headerlogin .headerlogin__image {
   width: 6rem;
 }
-.bodylogin .headerlogin .header__title {
+.bodylogin .headerlogin .headerlogin__title {
   color: #FFFFFF;
   font: 1.8rem "Arial";
   margin: 1rem 0 0;
@@ -102,7 +102,7 @@ table {
   cursor: pointer;
 }
 
-.bodyfooterlogin .footer__text {
+.footerlogin .footerlogin__text {
   color: #FFFFFF;
   font: 1rem "Arial";
 }
