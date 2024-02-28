@@ -11,7 +11,7 @@ if (empty($_POST['user_login'])) {
         } elseif (!empty($_POST['user_login']) && !empty($_POST['user_password'])) {
 			
 			$user_login = $_POST['user_login'];
-			$user_password = md5($_POST['user_password']);
+			$user_password = $_POST['user_password'];
 
 			$result_of_login_check = mysqli_query($conn, "SELECT nome, user, senha, permissoes
 														  FROM usuarios 
@@ -21,7 +21,7 @@ if (empty($_POST['user_login'])) {
 
 			$result_row = $result_of_login_check->fetch_object();
 	
-				if (!strcmp($user_password, $result_row->senha)) {
+				if (password_verify($user_password, $result_row->senha)) {
 		
 					$_SESSION['user_nome'] = $result_row->nome;
 					$_SESSION['user_permissoes'] = $result_row->permissoes;
@@ -37,7 +37,7 @@ if (empty($_POST['user_login'])) {
 				  }
 			}	else {
 					echo "<script type='text/javascript'>
-							alert('Este usuário não está cadastrado.');
+							alert('Usuário incorreto ou não cadastrado.');
 							window.location.replace('index.html');
 						  </script>";
 				}
