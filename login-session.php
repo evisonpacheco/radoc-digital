@@ -5,27 +5,32 @@ require 'db-connection.php';
 session_start();
 
 if (empty($_POST['user_login'])) {
-            echo "Preencha o campo Usuário.";
+            echo "<script type='text/javascript'>
+			alert('Preencha o campo Usuário.');
+			window.location.replace('index.html');
+   		  </script>";
         } elseif (empty($_POST['user_password'])) {
-            echo "Preencha o campo Senha.";
+            echo "<script type='text/javascript'>
+			alert('Preencha o campo Senha.');
+			window.location.replace('index.html');
+		  </script>";
         } elseif (!empty($_POST['user_login']) && !empty($_POST['user_password'])) {
 			
-			$user_login = $_POST['user_login'];
-			$user_password = $_POST['user_password'];
+			$usuario = $_POST['user_login'];
+			$senha = $_POST['user_password'];
 
-			$result_of_login_check = mysqli_query($conn, "SELECT nome, user, senha, permissoes
-														  FROM usuarios 
-														  WHERE user = '" . $user_login . "' ");
+			$result_of_login_check = mysqli_query($conn, "SELECT nome, user_registration, user_password
+								      FROM registro 
+								      WHERE user_login = '" . $usuario . "' ");
 				
 			if ($result_of_login_check->num_rows == 1) {
 
 			$result_row = $result_of_login_check->fetch_object();
 	
-				if (password_verify($user_password, $result_row->senha)) {
+				if (password_verify($senha, $result_row->user_password)) {
 		
-					$_SESSION['user_nome'] = $result_row->nome;
-					$_SESSION['user_permissoes'] = $result_row->permissoes;
-					$_SESSION['user_login_status'] = 1;
+					$_SESSION['user_name'] = $result_row->nome;
+					$_SESSION['user_registration'] = $result_row->user_registration;
 					header("Location: home.html");
 					exit();
 						
