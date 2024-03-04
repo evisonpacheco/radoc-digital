@@ -15,9 +15,9 @@ $sql = "INSERT INTO registro (user_name, user_registration, user_email, user_log
 
 if ($conn->query($sql) === TRUE) {
     echo "Registro inserido com sucesso";
+    header("Refresh: 3; url=index.html");
 } else {
     echo "Erro: " . $sql . "<br>" . $conn->error;
-    header("Refresh: 3; url=index.html");
 }
 
 $conn->close();
