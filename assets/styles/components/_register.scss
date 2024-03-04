@@ -1,0 +1,54 @@
+.bodyregister {
+background-color: #008A8A;
+height: 100vh;
+
+align-items: center;
+display: flex;
+flex-direction: center;
+justify-content: center;
+
+.bodyregister__title {
+  font-size: 1.5rem;  
+}
+
+  .form {
+    border: 1px solid #FFFFFF;
+    border-radius: 1rem;
+    padding: 2rem 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    &__title {
+      color: #FFFFFF;
+      font: 1.5rem 'Arial';
+      margin: 0 0 1rem;
+      text-align: center;
+    }
+  
+    &__field-input {
+      font: 1rem 'Arial';
+      margin: 0 0 1rem;
+      height: 1.5rem;
+    }
+  
+    &__button {
+      background-color: #27A844;
+      border: 1px solid transparent;
+      color: #FFFFFF;
+      font: 1rem 'Arial';
+      margin: 0 0 1rem ;
+      padding: 0.5rem 3rem;
+
+      &--reset {
+        background-color: red;
+      }
+
+      &:hover {
+        border: 1px solid #FFFFFF;
+        cursor: pointer;
+      }
+    }    
+  }
+}
