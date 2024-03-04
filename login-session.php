@@ -31,7 +31,7 @@ if (empty($_POST['user_login'])) {
 		
 					$_SESSION['user_name'] = $result_row->nome;
 					$_SESSION['user_registration'] = $result_row->user_registration;
-					header("Location: home.html");
+					header("Location: pages/home.html");
 					exit();
 						
 				} else {
