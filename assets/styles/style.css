@@ -101,6 +101,14 @@ table {
   border: 1px solid #FFFFFF;
   cursor: pointer;
 }
+.form .form__register {
+  color: #FFFFFF;
+  font: 1rem "Arial";
+  margin: 1rem 0;
+}
+.form .form__register--link {
+  color: #2D3338;
+}
 
 .footerlogin .footerlogin__text {
   color: #FFFFFF;

@@ -57,6 +57,18 @@
     border: 1px solid #FFFFFF;
     cursor: pointer;
   }
+
+  .form__register {
+    color: #FFFFFF;
+    font: 1rem 'Arial';
+    margin: 1rem 0;
+
+    &--link {
+      color: #2D3338;
+    }
+  }
+
+
 }
 
 .footerlogin {
