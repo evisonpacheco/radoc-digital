@@ -1,9 +1,4 @@
 
-	function logoff(){
-		window.location.replace('logoff-session.php');
-	}
-
-
 	//register.html
 	document.getElementById('user_registration').addEventListener('input', function (event) {
 		// Obtém o valor atual do campo de entrada
