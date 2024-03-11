@@ -30,7 +30,7 @@ if($result_of_registration_check->num_rows != 0){
 		</script>";
 } 
 
-if ($erro){
+if (!$erro){
 	$stmt = $conn->prepare("INSERT INTO registro (user_name, user_registration, user_email, user_password) VALUES (?, ?, ?, ?)");
 
 	$stmt->bind_param("ssss", $nome, $matricula, $email, $senhaHash);
