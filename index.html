@@ -15,14 +15,15 @@
         <form class ="form" action="login-session.php" method="post">
             <p class="form__title">Login no Sistema</p>
             <div class="form__field">
-              <label class="form__field-user" for="user_login"></label>
-              <input class="form__field-input" type="text" placeholder="Usuário" name="user_login" id="user_login">
+              <label class="form__field-user" for="user_email"></label>
+              <input class="form__field-input" type="text" placeholder="E-mail" name="user_email" id="user_email" required>
             </div>
             <div class="form__field">
               <label class="form__field-user" for="user_password"></label>
-              <input class="form__field-input" type="password" placeholder="Senha" name="user_password" id="user_password">
+              <input class="form__field-input" type="password" placeholder="Senha" name="user_password" id="user_password" required>
             </div>
             <button class="form__button" type="submit">Login</button>
+            <br>
             <p class="form__register">Não tem Cadastro ? <a class="form__register--link" href="./pages/register.html">Registre-se</a> aqui</p>
         </form>
     </main>
