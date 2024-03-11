@@ -12,7 +12,8 @@
 	});
 	
 	//register.php
-	var password = document.getElementById("user_password"), confirm = document.getElementById("user_confirm");
+	var password = document.getElementById("user_password"), confirm = document.getElementById("user_confirm"),
+	    matricula = document.getElementById("user_registration");
 
 	function validatePassword(){
   		if(password.value != confirm.value) {
@@ -22,5 +23,25 @@
   		}
 	}
 
+	function validateLength(){
+		var psw_length = password.value.length;
+		var matricula_length = matricula.value.length;
+		
+  		if(psw_length < 8 || psw_length > 25) {
+    	password.setCustomValidity("A senha deve ter, no mínimo, 9 caracteres e, no máximo, 25 caracteres.");
+  			} else {
+    	password.setCustomValidity('');
+  		}
+		
+		if(matricula_length != 10) {
+    	matricula.setCustomValidity("A matrícula deve ter 10 caracteres.");
+  			} else {
+    	matricula.setCustomValidity('');
+  		}
+	}
+
 		password.onchange = validatePassword;
 		confirm.onkeyup = validatePassword;
+
+		password.onkeyup = validateLength;
+		matricula.onkeyup = validateLength;
