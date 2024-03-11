@@ -2,26 +2,27 @@
 
 require 'db-connection.php';
 
-$nome = $_POST['user_name'];
-$matricula = $_POST['user_registration'];
-$email = $_POST['user_email'];
-$usuario = $_POST['user_login'];
-$senha = $_POST['user_password'];
-$confirmacao = $_POST['user_confirm'];
+$nome = mysqli_real_escape_string($conn, $_POST['user_name']);
+$matricula = mysqli_real_escape_string($conn, $_POST['user_registration']);
+$email = mysqli_real_escape_string($conn, $_POST['user_email']);
+$senha = mysqli_real_escape_string($conn, $_POST['user_password']);
+$confirmacao = mysqli_real_escape_string($conn, $_POST['user_confirm']);
+
 
 $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
-$sql = "INSERT INTO registro (user_name, user_registration, user_email, user_login, user_password) VALUES ('$nome', '$matricula', '$email', '$usuario', '$senhaHash')";
+$stmt = $conn->prepare("INSERT INTO registro (user_name, user_registration, user_email, user_password) VALUES (?, ?, ?, ?)");
 
-if ($conn->query($sql) === TRUE) {
+$stmt->bind_param("ssss", $nome, $matricula, $email, $senhaHash);
+
+if ($stmt->execute()) {
     echo "Registro inserido com sucesso";
     header("Refresh: 3; url=index.html");
 } else {
-    echo "Erro: " . $sql . "<br>" . $conn->error;
+    echo "Erro: " . $stmt->error;
 }
 
+$stmt->close();
 $conn->close();
-
-*/
 
 ?>
