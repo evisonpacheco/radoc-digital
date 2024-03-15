@@ -34,21 +34,21 @@
       <div class="homepage__info">
         <h2 class="homepage__title">Página Inicial</h2>
         <p>Sistema de Cadastro de Atividades Docentes.</p>
-                <div class="homepage__welcome">Bem Vindo, {user}!</div>
+        <div class="homepage__welcome">Bem Vindo, {user}!</div>
         <hr>
         
         <div>
           <label>Data de fechamento:</label>
-          <input type="text" name="data_fechamento">
+          <input type="date" name="data_fechamento">
           <label>Fim Atualização:</label>
-          <input type="text" name="fim_atualizacao">
+          <input type="date" name="fim_atualizacao">
         </div>
         
         <div>
           <label>Última Atualização:</label>
-          <input type="text" name="ultima_atualizacao">
+          <input type="date" name="ultima_atualizacao">
           <label>Ano Base:</label>
-          <input type="text" name="ano_base">
+          <input type="number" name="ano_base" max="9999">
         </div>
         
         <hr>
@@ -64,21 +64,21 @@
           <label>Situação Funcional:</label>
           <input type="text" name="situacao_funcional">
           <label>Número Semanas:</label>
-          <input type="text" name="numero_semanas">
+          <input type="number" name="numero_semanas">
         </div>
         
         <div>
           <label>Data Cadastro:</label>
-          <input type="text" name="data_cadastro">
+          <input type="date" name="data_cadastro">
           <label>Data Ingresso UFRA:</label>
-          <input type="text" name="data_ingresso_ufra">
+          <input type="date" name="data_ingresso_ufra">
         </div>
         
         <div>
           <label>Data Aposentadoria:</label>
-          <input type="text" name="data_aposentadoria">
+          <input type="date" name="data_aposentadoria">
           <label>Data Exclusão:</label>
-          <input type="text" name="data_exclusao">
+          <input type="date" name="data_exclusao">
         </div>
         
         <div>
@@ -90,7 +90,10 @@
         
         <div>
           <label>Nível:</label>
-          <input type="text" name="nivel">
+          <select name="nivel">
+            <option value="Graduação">Graduação</option>
+            <option value="Pós-Graduação">Pós-Graduação</option>
+          </select>
           <label>Titulação:</label>
           <input type="text" name="titulacao">
         </div>
@@ -118,12 +121,40 @@
           <label>Bairro:</label>
           <input type="text" name="bairro">
           <label>UF:</label>
-          <input type="text" name="uf">
+          <select name="uf">
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+          </select>
         </div>
         
         <div>
           <label>CEP:</label>
-          <input type="text" name="cep">
+          <input type="number" name="cep" pattern="[0-9]{8}">
           <label>Volp:</label>
           <input type="text" name="volp">
         </div>
@@ -132,12 +163,15 @@
           <label>E-Mail:</label>
           <input type="text" name="email">
           <label>Telefone:</label>
-          <input type="text" name="telefone">
+          <input type="number" name="telefone" pattern="[0-9]{11}">
         </div>
+        
+        <!-- Botão de Salvar -->
+        <button class="save-button">Salvar</button>
         
       </div>
     </div>
   </main>
 </body>
 </html>
-		
+
