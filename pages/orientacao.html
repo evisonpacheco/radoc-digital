@@ -35,55 +35,66 @@
         <h2 class="homepage__title">Orientação</h2>
       </div>
 
-      <div>
-
-          <div>
-            <nav>
-              <input type="button" value="Novo">
-              <input type="button" value="Salvar">
-              <input type="button" value="Excluir">
-            </nav>
-          </div>
-
-          <div>
-            <form action="#" method="post">
-              <div>
-            <label for="ori_table">Tabela: </label>
-            <input type="text" name="ori_table" id="ori_table">
-            <br>
-            <label for="ori_registration">Matrícula: </label>
-            <input type="text" name="ori_registration" id="ori_registration">
-            <br>
-            <label for="ori_class">Curso: </label>
-            <input type="text" name="ori_class" id="ori_class">
-            <br>
-            <label for="ori_level">Nível: </label>
-            <select name="ori_level" id="ori_level">
-              <option value="graduação">Graduação</option>
-              <option value="pós-graduação">Pós-Graduação</option>
-            </select>
-            <br>
-            <label for="ori_uni">IES: </label>
-            <input type="text" name="ori_uni" id="ori_uni" value="Universidade Federeal Rural da Amazônia">
-            <br>
-            <label for="ori_title">Título trabalho: </label>
-            <input type="text" name="ori_title" id="ori_title">
-            <br>
-            <label for="ori_ini"></label>
-            <input type="date" name="ori_ini" id="ori_ini">
-            <br>
-            <label for="ori_ter"></label>
-            <input type="date" name="ori_ter" id="ori_ter">
-            <br>
-            <label for="ori_type">Tipo de orientação: </label>
-            <select name="ori_type" id="ori_type">
-              <option value="presencial">PRESENCIAL</option>
-              <option value="ead">EAD</option>
-            </select>
-              </div>
-            </form>
-          </div>
-
+      <div class="orientacao">
+          <form class="orientacao__form" action="#" method="post">
+            <div class="form__field">
+              <label for="ori_table">Tabela:</label>
+              <input class="form__field--input" type="text" name="ori_table" id="ori_table">
+            </div>
+            
+            <div class="form__field">
+              <label for="ori_registration">Matrícula:</label>
+              <input class="form__field--input" type="text" name="ori_registration" id="ori_registration">
+            </div>
+            
+            <div class="form__field">
+              <label for="ori_class">Curso: </label>
+              <input class="form__field--input" type="text" name="ori_class" id="ori_class">
+            </div>
+            
+            <div class="form__field">
+              <label for="ori_level">Nível: </label>
+              <select name="ori_level" id="ori_level">
+                <option value="graduação">Graduação</option>
+                <option value="pós-graduação">Pós-Graduação</option>
+              </select>
+            </div>
+            
+            <div class="form__field">
+              <label for="ori_uni">IES: </label>
+              <input class="form__field--input" type="text" name="ori_uni" id="ori_uni" value="Universidade Federal Rural da Amazônia">
+            </div>
+            
+            <div class="form__field">
+              <label for="ori_title">Título trabalho: </label>
+              <input class="form__field--input" type="text" name="ori_title" id="ori_title">
+            </div>
+            
+            <div class="form__field">
+              <label for="ori_ini"></label>
+              <input class="form__field--date" type="date" name="ori_ini" id="ori_ini">
+            </div>
+            
+            <div class="form__field">
+              <label for="ori_ter"></label>
+              <input class="form__field--date" type="date" name="ori_ter" id="ori_ter">
+            </div>
+            
+            <div class="form__field">
+              <label for="ori_type">Tipo de orientação: </label>
+              <select name="ori_type" id="ori_type">
+                <option value="presencial">PRESENCIAL</option>
+                <option value="ead">EAD</option>
+              </select>
+            </div>
+            <div>
+              <nav>
+                <input type="button" value="Novo">
+                <input type="button" value="Salvar">
+                <input type="button" value="Excluir">
+              </nav>
+            </div>
+          </form>   
       </div>
     </div>
   </main>

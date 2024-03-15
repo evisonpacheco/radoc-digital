@@ -258,4 +258,35 @@ table {
 .bodyregister .form__button:hover {
   border: 1px solid #FFFFFF;
   cursor: pointer;
+}
+
+.orientacao__form {
+  align-items: center;
+  height: calc(100vh - 10rem);
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2.5rem;
+}
+.orientacao__form .form__field {
+  padding: 0.25rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.orientacao__form .form__field--input {
+  text-align: center;
+  width: 20rem;
+}
+.orientacao__form .form__button {
+  background-color: #27A844;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+  font: 1rem "Arial";
+  padding: 0.5rem 3rem;
+}
+.orientacao__form .form__button:hover {
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
