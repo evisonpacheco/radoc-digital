@@ -35,7 +35,7 @@
         <h2 class="ensinopage__title">Ensino</h2>
         <p>Sistema de Cadastro de Atividades Docentes.</p>
         <hr>
-        <!-- Lista de RADOCs previamente cadastrados -->
+      
         <table>
           <thead>
             <tr>
@@ -46,19 +46,19 @@
             </tr>
           </thead>
           <tbody>
-            <!-- Dados dos RADOCs serão inseridos aqui -->
+           
             <tr>
               <td><input type="checkbox"></td>
               <td></td>
               <td></td>
               <td></td>
             </tr>
-            <!-- Adicione mais linhas conforme necessário -->
+           
           </tbody>
         </table>
-        <!-- Fim da lista de RADOCs -->
+       
         <hr>
-        <!-- Continuação do código normalmente -->
+     
         <div>
           <label>Nível:</label>
           <select name="nivel">
@@ -111,7 +111,7 @@
       </div>
     </div>
   </main>
-  <!-- Botão Salvar -->
+ 
   <button class="save-button">Salvar</button>
 </body>
 </html>
