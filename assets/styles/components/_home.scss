@@ -109,5 +109,15 @@
       color: #000000;
     }
   }
+
+  .homepage__single {
+    align-self: center;
+    height: calc(100vh - 10rem);
+
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2.5rem;
+  }
 }
 }
