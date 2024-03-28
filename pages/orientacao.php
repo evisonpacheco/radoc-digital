@@ -21,7 +21,7 @@ include 'login_verification.php';
       <div class="sidemenu__flex">
         <ul class="sidemenu__list">
           <a href="home.php" class="sidemenu__element">Página Inicial</a>
-          <a href="#" class="sidemenu__element">Cadastrar Novo RADOC</a>
+          <a href="./novoradoc.php" class="sidemenu__element">Cadastrar Novo RADOC</a>
           <a href="./editar-dados.php" class="sidemenu__element" style="text-decoration:none;color:inherit;" >Editar dados</a>
           <a href="./ensino.php" class="sidemenu__element">Ensino</a>
           <a href="./orientacao.php" class="sidemenu__element">Orientação</a>
