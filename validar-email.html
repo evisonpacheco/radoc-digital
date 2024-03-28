@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar e-mail - RADOC Digital</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+</head>
+<body class="bodyregister">
+	<div>
+		<form class="form" action="validar-email.php" method="post">
+			<h1 class="form__title">Confirme sua matrícula:</h1>
+        
+			<div class="form__field">
+				<label class="form__field-label" for="user_registration"></label>
+				<input class="form__field-input" type="text" maxlength="10" placeholder="Matrícula" name="user_registration" id="user_registration" required>
+			</div>
+		
+			<button class="form__button" type="submit">Confirmar</button>
+		</form>
+	</div>
+</body>
