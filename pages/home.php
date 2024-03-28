@@ -44,6 +44,10 @@ $nome =  $_SESSION['user_name'];
       
         <hr>
         
+        <a href="../profile/edit-profile.php">
+          <button>Editar Perfil</button>
+        </a>
+
         <div>
           <label>Data de fechamento:</label>
           <input type="date" name="data_fechamento">
@@ -172,7 +176,6 @@ $nome =  $_SESSION['user_name'];
           <label>Telefone:</label>
           <input type="number" name="telefone" pattern="[0-9]{11}">
         </div>
-
         
         <button class="save-button">Salvar</button>
         
