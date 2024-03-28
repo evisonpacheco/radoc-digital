@@ -1,3 +1,6 @@
+<?php
+include 'login_verification.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
