@@ -12,9 +12,9 @@ $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
 $erro = false;
 
-$result_of_registration_check = mysqli_query ($conn, "SELECT id FROM registro WHERE user_registration='". $matricula ."'");
+$result_of_registration_check = mysqli_query ($conn, "SELECT user_id FROM registro WHERE user_registration='". $matricula ."'");
 
-$result_of_email_check = mysqli_query ($conn, "SELECT id FROM registro WHERE user_email='". $email ."'");
+$result_of_email_check = mysqli_query ($conn, "SELECT user_id FROM registro WHERE user_email='". $email ."'");
 			
 if($result_of_registration_check->num_rows != 0){
 	$erro = true;
