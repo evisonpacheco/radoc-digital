@@ -29,6 +29,7 @@ if(!$erro){
         header("Refresh: 0.2; url=../pages/orientacao.php");
     } else {
         echo "Erro: " . $stmt->error;
+    }
 }else{
     echo "<script>Você está offline. Volte para a área de login.</script>";
     header("Location: ../index.html");
