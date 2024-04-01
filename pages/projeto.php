@@ -39,7 +39,7 @@ include 'login_verification.php';
           <a href="./ensino.php" class="sidemenu__element">Ensino</a>
           <a href="./orientacao.php" class="sidemenu__element">Orientação</a>
           <a href="./projeto.php" class="sidemenu__element">Projeto</a>
-          <a href="#" class="sidemenu__element">Extensão</a>
+          <a href="./extensao.php" class="sidemenu__element">Extensão</a>
           <a href="./qualificação.php" class="sidemenu__element">Qualificação</a>
           <a href="./academica.php" class="sidemenu__element">Acadêmica</a>
           <a href="./administrativa.php" class="sidemenu__element">Administrativo</a>
@@ -53,7 +53,7 @@ include 'login_verification.php';
         <p>Sistema de Cadastro de Atividades Docentes.</p>
         <hr>
       
-        <table>
+        <!-- <table>
           <thead>
             <tr>
               <th></th>
@@ -74,46 +74,48 @@ include 'login_verification.php';
             </tr>
        
           </tbody>
-        </table>
+        </table> 
       
-        <hr>
+        <hr> -->
 
-        <form action="#" method="POST">
+        <form action="../pages-back/pages.php" method="POST">
           <div>
             <label>Código:</label>
-            <input type="text" name="codigo">
+            <input type="text" name="pro_codigo" id="">
           </div>
           <div>
-            <label>Nome:</label>
-            <input type="text" name="nome">
-          </div>
-          <div>
-            <label>Tabela:</label>
-            <input type="text" name="tabela">
+            <label>Nome do discente:</label>
+            <input type="text" name="pro_nome" id="pro_nome">
           </div>
           <div>
             <label>Data Início Efetiva:</label>
-            <input type="date" name="data_inicio_efetiva">
+            <input type="date" name="pro_data_inicio_efetiva" id="pro_data_inicio_efetiva">
             <label>Data término Efetiva:</label>
-            <input type="date" name="data_termino_efetiva">
+            <input type="date" name="pro_data_termino_efetiva" id="pro_data_termino_efetiva">
           </div>
           <div>
             <label>Tipo:</label>
-            <select name="tipo">
+            <select name="pro_tipo" id="pro_tipo">
               <option value="Pesquisa">Pesquisa</option>
               <option value="Projeto">Projeto</option>
             </select>
           </div>
           <div>
             <label>Projeto:</label>
-            <input type="text" name="projeto">
+            <input type="text" name="pro_projeto" id="pro_projeto">
           </div>
           <div>
             <label>Docente:</label>
-            <input type="text" name="docente">
+            <input type="text" name="pro_docente" id="pro_docente">
           </div>
    
-          <button type="submit">Salvar</button>
+            <div>
+              <nav>
+                <input type="button" value="Novo">
+                <input class="save-button" type="submit" value="Salvar">
+                <input type="button" value="Excluir">
+              </nav>
+            </div>
         </form>
       
       </div>
