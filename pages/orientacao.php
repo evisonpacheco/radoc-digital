@@ -26,7 +26,7 @@ include 'login_verification.php';
           <a href="./ensino.php" class="sidemenu__element">Ensino</a>
           <a href="./orientacao.php" class="sidemenu__element">Orientação</a>
           <a href="./projeto.php" class="sidemenu__element">Projeto</a>
-          <a href="#" class="sidemenu__element">Extenção</a>
+          <a href="./extensao.php" class="sidemenu__element">Extensão</a>
           <a href="./qualificação.php" class="sidemenu__element">Qualificação</a>
           <a href="./academica.php" class="sidemenu__element">Acadêmica</a>
           <a href="./administrativa.php" class="sidemenu__element">Administrativo</a>
@@ -40,11 +40,7 @@ include 'login_verification.php';
       </div>
 
       <div class="orientacao">
-          <form class="orientacao__form" action="#" method="post">
-            <div class="form__field">
-              <label for="ori_table">Tabela:</label>
-              <input class="form__field--input" type="text" name="ori_table" id="ori_table">
-            </div>
+          <form class="orientacao__form" action="../pages-back/pages.php" method="post">
             
             <div class="form__field">
               <label for="ori_registration">Matrícula:</label>
@@ -94,7 +90,7 @@ include 'login_verification.php';
             <div>
               <nav>
                 <input type="button" value="Novo">
-                <input type="button" value="Salvar">
+                <input class="save-button" type="submit" value="Salvar">
                 <input type="button" value="Excluir">
               </nav>
             </div>
