@@ -26,7 +26,7 @@ include 'login_verification.php';
           <a href="./ensino.php" class="sidemenu__element">Ensino</a>
           <a href="./orientacao.php" class="sidemenu__element">Orientação</a>
           <a href="./projeto.php" class="sidemenu__element">Projeto</a>
-          <a href="#" class="sidemenu__element">Extensão</a>
+          <a href="./extensao.php" class="sidemenu__element">Extensão</a>
           <a href="./qualificação.php" class="sidemenu__element">Qualificação</a>
           <a href="./academica.php" class="sidemenu__element">Acadêmica</a>
           <a href="./administrativa.php" class="sidemenu__element">Administrativo</a>
@@ -39,18 +39,8 @@ include 'login_verification.php';
         <h2 class="homepage__title">Acadêmica</h2>
       </div>
 
-      <div>
-
           <div>
-            <nav>
-              <input type="button" value="Novo">
-              <input type="button" value="Salvar">
-              <input type="button" value="Excluir">
-            </nav>
-          </div>
-
-          <div>
-            <form action="#" method="post">
+            <form action="../pages-back/pages.php" method="post">
               <div>
                 <label for="aca_table">Tabela: </label>
                 <input type="text" name="aca_table" id="aca_table">
@@ -70,6 +60,15 @@ include 'login_verification.php';
                 <label for="aca_description">Descrição Complementar: </label>
                 <textarea name="aca_description" id="aca_description" rows="4"></textarea>
               </div>
+
+            <div>
+              <nav>
+                <input type="button" value="Novo">
+                <input class="save-button" type="submit" value="Salvar">
+                <input type="button" value="Excluir">
+              </nav>
+            </div>
+
             </form>
           </div>
 
