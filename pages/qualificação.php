@@ -45,7 +45,7 @@ include 'login_verification.php';
           <a href="./ensino.php" class="sidemenu__element">Ensino</a>
           <a href="./orientacao.php" class="sidemenu__element">Orientação</a>
           <a href="./projeto.php" class="sidemenu__element">Projeto</a>
-          <a href="#" class="sidemenu__element">Extenção</a>
+          <a href="./extensao.php" class="sidemenu__element">Extensão</a>
           <a href="./qualificação.php" class="sidemenu__element">Qualificação</a>
           <a href="./academica.php" class="sidemenu__element">Acadêmica</a>
           <a href="./administrativa.php" class="sidemenu__element">Administrativo</a>
@@ -59,7 +59,8 @@ include 'login_verification.php';
         <p>Sistema de Cadastro de Atividades Docentes.</p>
         <hr>
        
-        <table>
+        <form action="../pages-back/pages.php" method="post">
+        <!-- <table>
           <thead>
             <tr>
               <th></th>
@@ -76,28 +77,33 @@ include 'login_verification.php';
               <td></td>
             </tr>
           </tbody>
-        </table>
+        </table> 
        
-        <hr>
+        <hr> -->
        
-        <div>
-          <label>Tabela:</label>
-          <input type="text" name="tabela">
-        </div>
         <div>
           <label>Data Início:</label>
-          <input type="date" name="data_inicio">
+          <input type="date" name="qua_data_inicio" id="qua_data_inicio">
           <label>Data Término:</label>
-          <input type="date" name="data_termino">
+          <input type="date" name="qua_data_termino" id="qua_data_termino">
         </div>
         <div>
           <label>Descrição:</label>
-          <textarea class="description-textarea" name="descricao"></textarea>
+          <textarea class="description-textarea" name="qua_descricao" id="qua_descricao"></textarea>
         </div>
+
+            <div>
+              <nav>
+                <input type="button" value="Novo">
+                <input class="save-button" type="submit" value="Salvar">
+                <input type="button" value="Excluir">
+              </nav>
+            </div>
+        </form>
       </div>
     </div>
   </main>
 
-  <button class="save-button">Salvar</button>
+
 </body>
 </html>
