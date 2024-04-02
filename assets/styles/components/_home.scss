@@ -25,7 +25,7 @@
     }
   }
 
-  .mainhome {
+  .homemain {
     display: flex;
     flex-direction: row;
 
@@ -107,6 +107,43 @@
 
     .homepage__welcome {
       color: #000000;
+    }
+  }
+
+  .edit-profile__link {
+    align-self: center;
+  }
+  
+  .edit-profile__button {
+    background-color: #27A844;
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    font: 1rem 'Arial';
+    margin: 0 auto;
+    padding: 0.5rem 3rem;
+
+    &:hover {
+      border: 1px solid #000000;
+      cursor: pointer;
+  }
+  }
+
+  .homeform {
+  
+  }
+
+  .expand__button {
+    margin: 0 auto;
+    background-color: #27A844;
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    font: 1rem 'Arial';
+    padding: 0.5rem 3rem;
+    justify-content: center;
+  
+    &:hover {
+      border: 1px solid #000000;
+      cursor: pointer;
     }
   }
 }

@@ -1,0 +1,22 @@
+.ensinopage {
+  overflow-x: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  .ensinotable {
+    max-width: 2rem;
+
+    &__row {
+      
+    } 
+
+    &__header {
+      
+    }
+
+    &__data {
+      
+    }
+  }
+}
