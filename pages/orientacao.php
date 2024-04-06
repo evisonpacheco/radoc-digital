@@ -40,7 +40,7 @@ include 'login_verification.php';
 
       <div class="orientacao">
           <form class="orientacao__form" action="../pages-back/pages.php" method="post">
-          <input type="hidden" name="formulario" value="2">
+          <input type="hidden" name="formulario" value="3">
             
             <div class="form__field">
               <label for="ori_registration">Matrícula:</label>
