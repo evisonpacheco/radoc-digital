@@ -39,7 +39,7 @@ include 'login_verification.php';
         </div>
 
         <form class="orientacao__form" action="../pages-back/pages.php" method="post">
-        <input type="hidden" name="formulario" value="5">
+        <input type="hidden" name="formulario" value="6">
         <table>
             <tr>
             <th colspan="6">Atividades de Gestão e Representação</th>
