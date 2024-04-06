@@ -136,8 +136,21 @@ $nome =  $_SESSION['user_name'];
           <input type="number" name="telefone" id="telefone" pattern="[0-9]{11}">
         </div>
 
+            <div>
+              <nav>
+                <input type="button" value="Novo">
+                <input class="save-button" type="submit" value="Salvar">
+                <input type="button" value="Excluir">
+              </nav>
+            </div>
+		
+	</form>
+
         <button type="button" class="collapsible" id="">Ensino</button>
         <div class="content" style="display:none;">
+
+	<form action="../pages-back/pages.php" method="post">
+        <input type="hidden" name="formulario" value="2">
         <table>
           <caption>Cálculo da CH semanal de aulas</caption>
           <tr>
