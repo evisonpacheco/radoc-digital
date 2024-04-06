@@ -59,7 +59,7 @@ include 'login_verification.php';
         <hr>
        
         <form action="../pages-back/pages.php" method="post">
-        <input type="hidden" name="formulario" value="6">
+        <input type="hidden" name="formulario" value="7">
         <!-- <table>
           <thead>
             <tr>
