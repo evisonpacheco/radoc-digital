@@ -40,7 +40,7 @@ include 'login_verification.php';
 
       <div class="extensao">
         <form action="../pages-back/pages.php" method="post">
-        <input type="hidden" name="formulario" value="4">
+        <input type="hidden" name="formulario" value="5">
           <table>
             <caption>Extensão</caption>
             <tr>
