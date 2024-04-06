@@ -79,7 +79,7 @@ include 'login_verification.php';
         <hr> -->
 
         <form action="../pages-back/pages.php" method="POST">
-        <input type="hidden" name="formulario" value="3">
+        <input type="hidden" name="formulario" value="4">
           <div>
             <label>Código:</label>
             <input type="text" name="pro_codigo" id="">
