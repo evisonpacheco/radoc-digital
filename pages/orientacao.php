@@ -44,47 +44,47 @@ include 'login_verification.php';
             
             <div class="form__field">
               <label for="ori_registration">Matrícula:</label>
-              <input class="form__field--input" type="text" name="ori_registration" id="ori_registration">
+              <input class="form__field--input" type="text" name="ori_matricula" id="ori_matricula">
             </div>
             
             <div class="form__field">
               <label for="ori_class">Curso: </label>
-              <input class="form__field--input" type="text" name="ori_class" id="ori_class">
+              <input class="form__field--input" type="text" name="ori_curso" id="ori_curso">
             </div>
             
             <div class="form__field">
               <label for="ori_level">Nível: </label>
-              <select name="ori_level" id="ori_level">
-                <option value="graduação">Graduação</option>
-                <option value="pós-graduação">Pós-Graduação</option>
+              <select name="ori_nivel" id="ori_nivel">
+                <option value="Graduação">Graduação</option>
+                <option value="Pós-Graduação">Pós-Graduação</option>
               </select>
             </div>
             
             <div class="form__field">
               <label for="ori_uni">IES: </label>
-              <input class="form__field--input" type="text" name="ori_uni" id="ori_uni" value="Universidade Federal Rural da Amazônia">
+              <input class="form__field--input" type="text" name="ori_ies" id="ori_ies" value="Universidade Federal Rural da Amazônia">
             </div>
             
             <div class="form__field">
               <label for="ori_title">Título trabalho: </label>
-              <input class="form__field--input" type="text" name="ori_title" id="ori_title">
+              <input class="form__field--input" type="text" name="ori_titulo_trabalho" id="ori_titulo_trabalho">
             </div>
             
             <div class="form__field">
               <label for="ori_ini"></label>
-              <input class="form__field--date" type="date" name="ori_ini" id="ori_ini">
+              <input class="form__field--date" type="date" name="ori_data_inicio" id="ori_data_inicio">
             </div>
             
             <div class="form__field">
               <label for="ori_ter"></label>
-              <input class="form__field--date" type="date" name="ori_ter" id="ori_ter">
+              <input class="form__field--date" type="date" name="ori_data_termino" id="ori_data_termino">
             </div>
             
             <div class="form__field">
               <label for="ori_type">Tipo de orientação: </label>
-              <select name="ori_type" id="ori_type">
-                <option value="presencial">PRESENCIAL</option>
-                <option value="ead">EAD</option>
+              <select name="ori_tipo_orientacao" id="ori_type">
+                <option value="Presencial">PRESENCIAL</option>
+                <option value="EAD">EAD</option>
               </select>
             </div>
             <div>
