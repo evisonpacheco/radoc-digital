@@ -40,7 +40,7 @@ include 'login_verification.php';
 
           <div>
             <form action="../pages-back/pages.php" method="post">
-            <input type="hidden" name="formulario" value="7">
+            <input type="hidden" name="formulario" value="8">
               <div>
                 <label for="aca_table">Tabela: </label>
                 <input type="text" name="aca_table" id="aca_table">
