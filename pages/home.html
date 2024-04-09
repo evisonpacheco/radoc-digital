@@ -28,7 +28,6 @@ $nome =  $_SESSION['user_name'];
           <a href="./novoradoc.php" class="sidemenu__element">Cadastrar Novo RADOC</a>
           <a href="./editar-dados.php" class="sidemenu__element" style="text-decoration:none;color:inherit;">Editar
             dados</a>
-          <a href="./ensino.php" class="sidemenu__element">Ensino</a>
           <a href="./orientacao.php" class="sidemenu__element">Orientação</a>
           <a href="./projeto.php" class="sidemenu__element">Projeto</a>
           <a href="./extensao.php" class="sidemenu__element">Extensão</a>
@@ -58,93 +57,104 @@ $nome =  $_SESSION['user_name'];
       <hr>
 
       <form class="homeform" action="../pages-back/pages.php" method="post">
-        <div>
-          <label>Classe:</label>
-          <input type="text" name="classe" id="classe">
-          <label>Regime Trabalho:</label>
-          <input type="text" name="regime_trabalho" id="regime_trabalho">
+        <div class="homeform-one">
+          <div class="homeform-one__element">
+            <label>Classe:</label>
+            <input type="text" name="classe" id="classe">
+          </div>
+          <div class="homeform-one__element">
+            <label>Regime Trabalho:</label>
+            <input type="text" name="regime_trabalho" id="regime_trabalho">
+          </div>
+          <div class="homeform-one__element">
+            <label>Nível:</label>
+            <select name="nivel">
+              <option value="Graduação">Graduação</option>
+              <option value="Pós-Graduação">Pós-Graduação</option>
+            </select>
+          </div>
+          <div class="homeform-one__element">
+            <label>Titulação:</label>
+            <input type="text" name="titulacao" id="titulacao">
+          </div>
+          <div class="homeform-one__element">
+            <label>Lotação:</label>
+            <input type="text" name="lotacao" id="lotacao">
+          </div>
+          <div class="homeform-one__element">
+            <label>Empregador:</label>
+            <input type="text" name="empregador" id="empregador">
+          </div>
+          <div class="homeform-one__element">
+            <label>Cargo:</label>
+            <input type="text" name="cargo" id="cargo">
+          </div>
+          <div class="homeform-one__element">
+            <label>Logradouro:</label>
+            <input type="text" name="logradouro" id="logradouro">
+          </div>
+          <div class="homeform-one__element">
+            <label>Cidade:</label>
+            <input type="text" name="cidade" id="cidade">
+          </div>
+          <div class="homeform-one__element">
+            <label>Bairro:</label>
+            <input type="text" name="bairro" id="bairro">
+          </div>
+          <div class="homeform-one__element">
+            <label>UF:</label>
+            <select name="uf" id="uf">
+              <option value="AC">AC</option>
+              <option value="AL">AL</option>
+              <option value="AP">AP</option>
+              <option value="AM">AM</option>
+              <option value="BA">BA</option>
+              <option value="CE">CE</option>
+              <option value="DF">DF</option>
+              <option value="ES">ES</option>
+              <option value="GO">GO</option>
+              <option value="MA">MA</option>
+              <option value="MT">MT</option>
+              <option value="MS">MS</option>
+              <option value="MG">MG</option>
+              <option value="PA">PA</option>
+              <option value="PB">PB</option>
+              <option value="PR">PR</option>
+              <option value="PE">PE</option>
+              <option value="PI">PI</option>
+              <option value="RJ">RJ</option>
+              <option value="RN">RN</option>
+              <option value="RS">RS</option>
+              <option value="RO">RO</option>
+              <option value="RR">RR</option>
+              <option value="SC">SC</option>
+              <option value="SP">SP</option>
+              <option value="SE">SE</option>
+              <option value="TO">TO</option>
+            </select>
+          </div>
+          <div class="homeform-one__element">
+            <label>CEP:</label>
+            <input type="number" name="cep" id="cep" pattern="[0-9]{8}">
+          </div>
+          <div class="homeform-one__element">
+            <label>Volp:</label>
+            <input type="text" name="volp" id="volp">
+          </div>
+          <div class="homeform-one__element">
+            <label>E-Mail:</label>
+            <input type="text" name="email" id="email">
+          </div>
+          <div class="homeform-one__element">
+            <label>Telefone:</label>
+            <input type="number" name="telefone" id="telefone" pattern="[0-9]{11}">
+          </div>
         </div>
 
-        <div>
-          <label>Nível:</label>
-          <select name="nivel">
-            <option value="Graduação">Graduação</option>
-            <option value="Pós-Graduação">Pós-Graduação</option>
-          </select>
-          <label>Titulação:</label>
-          <input type="text" name="titulacao" id="titulacao">
-        </div>
-
-        <div>
-          <label>Lotação:</label>
-          <input type="text" name="lotacao" id="lotacao">
-        </div>
-
-        <div>
-          <label>Empregador:</label>
-          <input type="text" name="empregador" id="empregador">
-          <label>Cargo:</label>
-          <input type="text" name="cargo" id="cargo">
-        </div>
-
-        <div>
-          <label>Logradouro:</label>
-          <input type="text" name="logradouro" id="logradouro">
-          <label>Cidade:</label>
-          <input type="text" name="cidade" id="cidade">
-        </div>
-
-        <div>
-          <label>Bairro:</label>
-          <input type="text" name="bairro" id="bairro">
-          <label>UF:</label>
-          <select name="uf" id="uf">
-            <option value="AC">AC</option>
-            <option value="AL">AL</option>
-            <option value="AP">AP</option>
-            <option value="AM">AM</option>
-            <option value="BA">BA</option>
-            <option value="CE">CE</option>
-            <option value="DF">DF</option>
-            <option value="ES">ES</option>
-            <option value="GO">GO</option>
-            <option value="MA">MA</option>
-            <option value="MT">MT</option>
-            <option value="MS">MS</option>
-            <option value="MG">MG</option>
-            <option value="PA">PA</option>
-            <option value="PB">PB</option>
-            <option value="PR">PR</option>
-            <option value="PE">PE</option>
-            <option value="PI">PI</option>
-            <option value="RJ">RJ</option>
-            <option value="RN">RN</option>
-            <option value="RS">RS</option>
-            <option value="RO">RO</option>
-            <option value="RR">RR</option>
-            <option value="SC">SC</option>
-            <option value="SP">SP</option>
-            <option value="SE">SE</option>
-            <option value="TO">TO</option>
-          </select>
-        </div>
-
-        <div>
-          <label>CEP:</label>
-          <input type="number" name="cep" id="cep" pattern="[0-9]{8}">
-          <label>Volp:</label>
-          <input type="text" name="volp" id="volp">
-        </div>
-
-        <div>
-          <label>E-Mail:</label>
-          <input type="text" name="email" id="email">
-          <label>Telefone:</label>
-          <input type="number" name="telefone" id="telefone" pattern="[0-9]{11}">
-        </div>
-
-        <button onclick="changeName();" type="button" class="expand__button" id="expand__button">&#9196; Expandir &#9196;</button>
-        <div class="ensinopage" style="display:none;">
+        <button onclick="changeName();" type="button" class="expand__button" id="expand__button">&#9196; Expandir
+          &#9196;</button>
+        <div class="ensinopage" style="display:block;">
+          <p class="ensinopage__title">ENSINO</p>
           <table class="ensinotable">
             <caption class="ensinotable__title">Cálculo da CH semanal de aulas</caption>
             <tr class="ensinotable__row">
@@ -155,15 +165,21 @@ $nome =  $_SESSION['user_name'];
             </tr>
             <tr class="ensinotable__row">
               <th class="ensinotable__header">1ª</th>
-              <td class="ensinotable__data"><input type="number" name="chs_graduacao1" id="chs_graduacao1"></td>
-              <td class="ensinotable__data"><input type="number" name="chs_pos-graduacao1" id="chs_pos-graduacao1"></td>
-              <td class="ensinotable__data"><input type="number" name="chs_total1" id="chs_total1"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" type="number" name="chs_graduacao1"
+                  id="chs_graduacao1"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" type="number" name="chs_pos-graduacao1"
+                  id="chs_pos-graduacao1"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" type="number" name="chs_total1"
+                  id="chs_total1"></td>
             </tr>
             <tr>
-              <th  class="ensinotable__header">2ª</th>
-              <td  class="ensinotable__data"><input type="number" name="chs_graduacao2" id="chs_graduacao2"></td>
-              <td  class="ensinotable__data"><input type="number" name="chs_pos-graduacao2" id="chs_pos-graduacao2"></td>
-              <td  class="ensinotable__data"><input type="number" name="chs_total2" id="chs_total2"></td>
+              <th class="ensinotable__header">2ª</th>
+              <td class="ensinotable__data"><input class="ensinotable__input" type="number" name="chs_graduacao2"
+                  id="chs_graduacao2"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" type="number" name="chs_pos-graduacao2"
+                  id="chs_pos-graduacao2"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" type="number" name="chs_total2"
+                  id="chs_total2"></td>
             </tr>
           </table>
 
@@ -177,15 +193,19 @@ $nome =  $_SESSION['user_name'];
             </tr>
             <tr class="ensinotable__row">
               <th class="ensinotable__header">1ª</th>
-              <td class="ensinotable__data"><input type="number" name="apc_graduacao1" id="apc_graduacao1"></td>
-              <td class="ensinotable__data"><input type="number" name="apc_pos-graduacao1" id="apc_pos-graduacao1"></td>
-              <td class="ensinotable__data"><input type="number" name="apc_total1" id="apc_total1"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" type="number" name="apc_graduacao1"
+                  id="apc_graduacao1"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" type="number" name="apc_pos-graduacao1"
+                  id="apc_pos-graduacao1"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" type="number" name="apc_total1"
+                  id="apc_total1"></td>
             </tr>
             <tr>
               <th>2ª</th>
-              <td><input type="number" name="apc_graduacao2" id="apc_graduacao2"></td>
-              <td><input type="number" name="apc_pos-graduacao2" id="apc_pos-graduacao2"></td>
-              <td><input type="number" name="apc_total2" id="apc_total2"></td>
+              <td><input class="ensinotable__input" type="number" name="apc_graduacao2" id="apc_graduacao2"></td>
+              <td><input class="ensinotable__input" type="number" name="apc_pos-graduacao2" id="apc_pos-graduacao2">
+              </td>
+              <td><input class="ensinotable__input" type="number" name="apc_total2" id="apc_total2"></td>
             </tr>
           </table>
 
@@ -201,19 +221,21 @@ $nome =  $_SESSION['user_name'];
             </tr>
             <tr>
               <th>1ª</th>
-              <td><input type="number" name="aosrt_orientacao1" id="aosrt_orientacao1"></td>
-              <td><input type="number" name="aosrt_co-orientacao1" id="aosrt_co-orientacao1"></td>
-              <td><input type="number" name="aosrt_supervisao1" id="aosrt_supervisao1"></td>
-              <td><input type="number" name="aosrt_perceptuto1" id="aosrt_perceptuto1"></td>
-              <td><input type="number" name="aosrt_total1" id="aosrt_total1"></td>
+              <td><input class="ensinotable__input" type="number" name="aosrt_orientacao1" id="aosrt_orientacao1"></td>
+              <td><input class="ensinotable__input" type="number" name="aosrt_co-orientacao1" id="aosrt_co-orientacao1">
+              </td>
+              <td><input class="ensinotable__input" type="number" name="aosrt_supervisao1" id="aosrt_supervisao1"></td>
+              <td><input class="ensinotable__input" type="number" name="aosrt_perceptuto1" id="aosrt_perceptuto1"></td>
+              <td><input class="ensinotable__input" type="number" name="aosrt_total1" id="aosrt_total1"></td>
             </tr>
             <tr>
               <th>2ª</th>
-              <td><input type="number" name="aosrt_orientacao2" id="aosrt_orientacao2"></td>
-              <td><input type="number" name="aosrt_co-orientacao2" id="aosrt_co-orientacao2"></td>
-              <td><input type="number" name="aosrt_supervisao2" id="aosrt_supervisao2"></td>
-              <td><input type="number" name="aosrt_perceptuto2" id="aosrt_perceptuto2"></td>
-              <td><input type="number" name="aosrt_total2" id="aosrt_total2"></td>
+              <td><input class="ensinotable__input" type="number" name="aosrt_orientacao2" id="aosrt_orientacao2"></td>
+              <td><input class="ensinotable__input" type="number" name="aosrt_co-orientacao2" id="aosrt_co-orientacao2">
+              </td>
+              <td><input class="ensinotable__input" type="number" name="aosrt_supervisao2" id="aosrt_supervisao2"></td>
+              <td><input class="ensinotable__input" type="number" name="aosrt_perceptuto2" id="aosrt_perceptuto2"></td>
+              <td><input class="ensinotable__input" type="number" name="aosrt_total2" id="aosrt_total2"></td>
             </tr>
           </table>
 
@@ -229,13 +251,13 @@ $nome =  $_SESSION['user_name'];
               <th>CH semanal do 1ª semestre</th>
             </tr>
             <tr>
-              <td><input type="text" name="sa_doc" id="sa_doc"></td>
-              <td><input type="text" name="sa_matricula" id="sa_matricula"></td>
-              <td><input type="text" name="sa_curso" id="sa_curso"></td>
-              <td><input type="text" name="sa_tipo" id="sa_tipo"></td>
-              <td><input type="text" name="sa_nivel" id="sa_nivel"></td>
-              <td><input type="number" name="sa_chs1" id="sa_chs1"></td>
-              <td><input type="number" name="sa_chs2" id="sa_chs2"></td>
+              <td><input class="ensinotable__input" type="text" name="sa_doc" id="sa_doc"></td>
+              <td><input class="ensinotable__input" type="text" name="sa_matricula" id="sa_matricula"></td>
+              <td><input class="ensinotable__input" type="text" name="sa_curso" id="sa_curso"></td>
+              <td><input class="ensinotable__input" type="text" name="sa_tipo" id="sa_tipo"></td>
+              <td><input class="ensinotable__input" type="text" name="sa_nivel" id="sa_nivel"></td>
+              <td><input class="ensinotable__input" type="number" name="sa_chs1" id="sa_chs1"></td>
+              <td><input class="ensinotable__input" type="number" name="sa_chs2" id="sa_chs2"></td>
             </tr>
           </table>
 
@@ -249,11 +271,11 @@ $nome =  $_SESSION['user_name'];
               <th>CH semanal do 1ª semestre</th>
             </tr>
             <tr>
-              <td><input type="text" name="rtr_doc" id="rtr_doc"></td>
-              <td><input type="text" name="rtr_matricula" id="rtr_matricula"></td>
-              <td><input type="text" name="rtr_tipo" id="rtr_tipo"></td>
-              <td><input type="number" name="rtr_chs1" id="rtr_chs1"></td>
-              <td><input type="number" name="rtr_chs2" id="rtr_chs2"></td>
+              <td><input class="ensinotable__input" type="text" name="rtr_doc" id="rtr_doc"></td>
+              <td><input class="ensinotable__input" type="text" name="rtr_matricula" id="rtr_matricula"></td>
+              <td><input class="ensinotable__input" type="text" name="rtr_tipo" id="rtr_tipo"></td>
+              <td><input class="ensinotable__input" type="number" name="rtr_chs1" id="rtr_chs1"></td>
+              <td><input class="ensinotable__input" type="number" name="rtr_chs2" id="rtr_chs2"></td>
             </tr>
           </table>
 
@@ -267,11 +289,11 @@ $nome =  $_SESSION['user_name'];
               <th>CH semanal do 1ª semestre</th>
             </tr>
             <tr>
-              <td><input type="text" name="be_doc" id="be_doc"></td>
-              <td><input type="text" name="be_descricao" id="be_descricao"></td>
-              <td><input type="text" name="be_tipo" id="be_tipo"></td>
-              <td><input type="number" name="be_chs1" id="be_chs1"></td>
-              <td><input type="number" name="be_chs2" id="be_chs2"></td>
+              <td><input class="ensinotable__input" type="text" name="be_doc" id="be_doc"></td>
+              <td><input class="ensinotable__input" type="text" name="be_descricao" id="be_descricao"></td>
+              <td><input class="ensinotable__input" type="text" name="be_tipo" id="be_tipo"></td>
+              <td><input class="ensinotable__input" type="number" name="be_chs1" id="be_chs1"></td>
+              <td><input class="ensinotable__input" type="number" name="be_chs2" id="be_chs2"></td>
             </tr>
           </table>
           <table class="ensinotable">
@@ -283,10 +305,10 @@ $nome =  $_SESSION['user_name'];
               <th>2ª semestre</th>
             </tr>
             <tr>
-              <td><input type="text" name="ad_doc1" id="ad_doc1"></td>
-              <td><input type="text" name="ad_semestre1" id="ad_semestre1"></td>
-              <td><input type="text" name="ad_doc2" id="ad_doc2"></td>
-              <td><input type="text" name="ad_semestre2" id="ad_semestre2"></td>
+              <td><input class="ensinotable__input" type="text" name="ad_doc1" id="ad_doc1"></td>
+              <td><input class="ensinotable__input" type="text" name="ad_semestre1" id="ad_semestre1"></td>
+              <td><input class="ensinotable__input" type="text" name="ad_doc2" id="ad_doc2"></td>
+              <td><input class="ensinotable__input" type="text" name="ad_semestre2" id="ad_semestre2"></td>
             </tr>
           </table>
         </div>

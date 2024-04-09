@@ -30,8 +30,7 @@
     flex-direction: row;
 
     .sidemenu {
-      min-width: 15%;
-      max-width: 30%;
+      height: calc(100vh - 7rem);
 
       .sidemenu__title {
         align-items: center;
@@ -64,7 +63,7 @@
           border-bottom: 1px solid #008A8A ;
           display: flex;
           min-height: 3rem;
-          padding: 0 0 0 1rem;
+          padding: 0 0.5rem;
           vertical-align: center;
 
           &:hover {
@@ -90,9 +89,10 @@
   }
 
   .homepage {
+    width: 100%;
+
     display: flex;
     flex-direction: column;
-    width: 100%;
 
     .homepage__info {
       align-items: center;
@@ -103,6 +103,7 @@
       height: 2rem;
       justify-content: space-evenly;
       padding: 0.5rem 3rem;
+      width: 100%;
     }
 
     .homepage__welcome {
@@ -129,21 +130,34 @@
   }
 
   .homeform {
-  
-  }
+    display: flex;
+    flex-direction: column;
+    
+    .homeform-one {
+      align-self: center;
+      display: grid;
+      justify-items: stretch;
+      padding: 1rem 0;
 
-  .expand__button {
-    margin: 0 auto;
-    background-color: #27A844;
-    border: 1px solid transparent;
-    color: #FFFFFF;
-    font: 1rem 'Arial';
-    padding: 0.5rem 3rem;
-    justify-content: center;
-  
-    &:hover {
-      border: 1px solid #000000;
-      cursor: pointer;
+      &__element {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .expand__button {
+      margin: 0 auto;
+      background-color: #27A844;
+      border: 1px solid transparent;
+      color: #FFFFFF;
+      font: 1rem 'Arial';
+      padding: 0.5rem 3rem;
+      justify-content: center;
+      
+      &:hover {
+        border: 1px solid #000000;
+        cursor: pointer;
+      }
     }
   }
 }

@@ -144,8 +144,7 @@ table {
   flex-direction: row;
 }
 .bodyhome .homemain .sidemenu {
-  min-width: 15%;
-  max-width: 30%;
+  height: calc(100vh - 7rem);
 }
 .bodyhome .homemain .sidemenu .sidemenu__title {
   align-items: center;
@@ -176,7 +175,7 @@ table {
   border-bottom: 1px solid #008A8A;
   display: flex;
   min-height: 3rem;
-  padding: 0 0 0 1rem;
+  padding: 0 0.5rem;
   vertical-align: center;
 }
 .bodyhome .homemain .sidemenu .sidemenu__list .sidemenu__element:hover {
@@ -196,9 +195,9 @@ table {
   cursor: pointer;
 }
 .bodyhome .homemain .homepage {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 .bodyhome .homemain .homepage .homepage__info {
   align-items: center;
@@ -209,6 +208,7 @@ table {
   height: 2rem;
   justify-content: space-evenly;
   padding: 0.5rem 3rem;
+  width: 100%;
 }
 .bodyhome .homemain .homepage .homepage__welcome {
   color: #000000;
@@ -228,7 +228,21 @@ table {
   border: 1px solid #000000;
   cursor: pointer;
 }
-.bodyhome .homemain .expand__button {
+.bodyhome .homemain .homeform {
+  display: flex;
+  flex-direction: column;
+}
+.bodyhome .homemain .homeform .homeform-one {
+  align-self: center;
+  display: grid;
+  justify-items: stretch;
+  padding: 1rem 0;
+}
+.bodyhome .homemain .homeform .homeform-one__element {
+  display: flex;
+  justify-content: space-between;
+}
+.bodyhome .homemain .homeform .expand__button {
   margin: 0 auto;
   background-color: #27A844;
   border: 1px solid transparent;
@@ -237,7 +251,7 @@ table {
   padding: 0.5rem 3rem;
   justify-content: center;
 }
-.bodyhome .homemain .expand__button:hover {
+.bodyhome .homemain .homeform .expand__button:hover {
   border: 1px solid #000000;
   cursor: pointer;
 }
@@ -324,6 +338,10 @@ table {
   display: flex;
   flex-direction: column;
 }
-.ensinopage .ensinotable {
-  max-width: 2rem;
+.ensinopage__title {
+  font: 1.5rem "Arial";
+  text-align: center;
+}
+.ensinopage .ensinotable__input {
+  width: 7rem;
 }/*# sourceMappingURL=style.css.map */

@@ -4,19 +4,28 @@
   display: flex;
   flex-direction: column;
 
+  &__title {
+    font: 1.5rem 'Arial';
+    text-align: center;
+  }
+
   .ensinotable {
-    max-width: 2rem;
-
-    &__row {
-      
-    } 
-
-    &__header {
-      
+    //max-width: 2rem;
+     
+    &__input {
+      width: 7rem;     
     }
 
+    &__row {
+           
+    } 
+    
+    &__header {
+          
+    }
+    
     &__data {
-      
+       
     }
   }
 }
