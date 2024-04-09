@@ -35,11 +35,11 @@ include 'login_verification.php';
       <div class="sidemenu__flex">
         <ul class="sidemenu__list">
           <a href="home.php" class="sidemenu__element">Página Inicial</a>
-          <a href="./novoradoc.php" class="sidemenu__element">Cadastrar Novo RADOC</a>
-          <a href="./ensino.php" class="sidemenu__element">Ensino</a>
+      <a href="./editar-dados.php" class="sidemenu__element" style="text-decoration:none;color:inherit;">Editar dados</a>
           <a href="./orientacao.php" class="sidemenu__element">Orientação</a>
           <a href="./projeto.php" class="sidemenu__element">Projeto</a>
           <a href="./extensao.php" class="sidemenu__element">Extensão</a>
+          <a href="./gestao.php" class="sidemenu__element">Gestão</a>
           <a href="./qualificação.php" class="sidemenu__element">Qualificação</a>
           <a href="./academica.php" class="sidemenu__element">Acadêmica</a>
           <a href="./administrativa.php" class="sidemenu__element">Administrativo</a>
@@ -79,6 +79,7 @@ include 'login_verification.php';
         <hr> -->
 
         <form action="../pages-back/pages.php" method="POST">
+        <input type="hidden" name="formulario" value="4">
           <div>
             <label>Código:</label>
             <input type="text" name="pro_codigo" id="">

@@ -21,12 +21,11 @@ include 'login_verification.php';
       <div class="sidemenu__flex">
         <ul class="sidemenu__list">
           <a href="home.php" class="sidemenu__element">Página Inicial</a>
-          <a href="./novoradoc.php" class="sidemenu__element">Cadastrar Novo RADOC</a>
           <a href="./editar-dados.php" class="sidemenu__element" style="text-decoration:none;color:inherit;" >Editar dados</a>
-          <a href="./ensino.php" class="sidemenu__element">Ensino</a>
           <a href="./orientacao.php" class="sidemenu__element">Orientação</a>
           <a href="./projeto.php" class="sidemenu__element">Projeto</a>
           <a href="./extensao.php" class="sidemenu__element">Extensão</a>
+          <a href="./gestao.php" class="sidemenu__element">Gestão</a>
           <a href="./qualificação.php" class="sidemenu__element">Qualificação</a>
           <a href="./academica.php" class="sidemenu__element">Acadêmica</a>
           <a href="./administrativa.php" class="sidemenu__element">Administrativo</a>
@@ -41,50 +40,51 @@ include 'login_verification.php';
 
       <div class="orientacao">
           <form class="orientacao__form" action="../pages-back/pages.php" method="post">
+          <input type="hidden" name="formulario" value="3">
             
             <div class="form__field">
               <label for="ori_registration">Matrícula:</label>
-              <input class="form__field--input" type="text" name="ori_registration" id="ori_registration">
+              <input class="form__field--input" type="text" name="ori_matricula" id="ori_matricula">
             </div>
             
             <div class="form__field">
               <label for="ori_class">Curso: </label>
-              <input class="form__field--input" type="text" name="ori_class" id="ori_class">
+              <input class="form__field--input" type="text" name="ori_curso" id="ori_curso">
             </div>
             
             <div class="form__field">
               <label for="ori_level">Nível: </label>
-              <select name="ori_level" id="ori_level">
-                <option value="graduação">Graduação</option>
-                <option value="pós-graduação">Pós-Graduação</option>
+              <select name="ori_nivel" id="ori_nivel">
+                <option value="Graduação">Graduação</option>
+                <option value="Pós-Graduação">Pós-Graduação</option>
               </select>
             </div>
             
             <div class="form__field">
               <label for="ori_uni">IES: </label>
-              <input class="form__field--input" type="text" name="ori_uni" id="ori_uni" value="Universidade Federal Rural da Amazônia">
+              <input class="form__field--input" type="text" name="ori_ies" id="ori_ies" value="Universidade Federal Rural da Amazônia">
             </div>
             
             <div class="form__field">
               <label for="ori_title">Título trabalho: </label>
-              <input class="form__field--input" type="text" name="ori_title" id="ori_title">
+              <input class="form__field--input" type="text" name="ori_titulo_trabalho" id="ori_titulo_trabalho">
             </div>
             
             <div class="form__field">
               <label for="ori_ini"></label>
-              <input class="form__field--date" type="date" name="ori_ini" id="ori_ini">
+              <input class="form__field--date" type="date" name="ori_data_inicio" id="ori_data_inicio">
             </div>
             
             <div class="form__field">
               <label for="ori_ter"></label>
-              <input class="form__field--date" type="date" name="ori_ter" id="ori_ter">
+              <input class="form__field--date" type="date" name="ori_data_termino" id="ori_data_termino">
             </div>
             
             <div class="form__field">
               <label for="ori_type">Tipo de orientação: </label>
-              <select name="ori_type" id="ori_type">
-                <option value="presencial">PRESENCIAL</option>
-                <option value="ead">EAD</option>
+              <select name="ori_tipo_orientacao" id="ori_type">
+                <option value="Presencial">PRESENCIAL</option>
+                <option value="EAD">EAD</option>
               </select>
             </div>
             <div>

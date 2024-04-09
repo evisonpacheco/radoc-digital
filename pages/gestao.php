@@ -6,7 +6,7 @@ include 'login_verification.php';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Administrativa</title>
+  <title>Gestão</title>
   <link rel="stylesheet" href="../assets/styles/style.css">
   <script src="../script.js" defer></script>
 </head>
@@ -21,7 +21,7 @@ include 'login_verification.php';
       <div class="sidemenu__flex">
         <ul class="sidemenu__list">
           <a href="home.php" class="sidemenu__element">Página Inicial</a>
-		      <a href="./editar-dados.php" class="sidemenu__element" style="text-decoration:none;color:inherit;" >Editar dados</a>
+          <a href="./editar-dados.php" class="sidemenu__element" style="text-decoration:none;color:inherit;" >Editar dados</a>
           <a href="./orientacao.php" class="sidemenu__element">Orientação</a>
           <a href="./projeto.php" class="sidemenu__element">Projeto</a>
           <a href="./extensao.php" class="sidemenu__element">Extensão</a>
@@ -35,40 +35,43 @@ include 'login_verification.php';
     </div>
     <div class="homepage">
       <div class="homepage__info">
-        <h2 class="homepage__title">Administrativa</h2>
-      </div>
+        <h2 class="homepage__title">Gestão</h2>
+        </div>
 
-            <form action="../pages-back/pages.php" method="post">
-            <input type="hidden" name="formulario" value="9">
-              <div>
-                <label for="adm_table">Tabela: </label>
-                <input type="text" name="adm_table" id="adm_table">
-                <br>
-                <label for="adm_portaria">Portaria: </label>
-                <input type="text" name="adm_portaria" id="adm_portaria">
-                <br>
-                <label for="adm_emissor">Órgão emissor: </label>
-                <input type="text" name="adm_emissor" id="adm_emissor">
-                <br>
-                <label for="adm_servido">Órgão Servido: </label>
-                <input type="text" name="adm_servido" id="adm_servido">
-                <br>
-                <label for="adm_description">Descrição: </label>
-                <textarea name="adm_description" id="adm_description" rows="4"></textarea>
-              </div>
+        <form class="orientacao__form" action="../pages-back/pages.php" method="post">
+        <input type="hidden" name="formulario" value="6">
+        <table>
+            <tr>
+            <th colspan="6">Atividades de Gestão e Representação</th>
+            </tr>
 
-              <div>
+            <tr>
+                <th>Número do Doc</th>
+                <th>Carga e/ou Função</th>
+                <th>Semana</th>
+                <th>CH Semanal</th>
+                <th>Ato de Designação</th>
+                <th>Período</th>
+            </tr>
+
+            <tr>
+                <td><input type="text" name="ges_num_doc" id="ges_num_doc"></td>
+                <td><input type="text" name="ges_funcao" id="ges_funcao"></td>
+                <td><input type="number" name="ges_semana" id="ges_semana"></td>
+                <td><input type="number" name="ges_chs" id="ges_chs"></td>
+                <td><input type="text" name="ges_designacao" id="ges_designacao"></td>
+                <td><input type="text" name="ges_periodo" id="ges_periodo"></td>
+            </tr>
+        </table>
+
+            <div>
               <nav>
                 <input type="button" value="Novo">
                 <input class="save-button" type="submit" value="Salvar">
                 <input type="button" value="Excluir">
               </nav>
             </div>
-
-            </form>
-          </div>
-
-      </div>
+        </form>
     </div>
   </main>
 </body>
