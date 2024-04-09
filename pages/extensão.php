@@ -53,6 +53,8 @@ include 'login_verification.php';
               <input type="text" name="ext_titulo1" placeholder="Título 1">
               </td>
             </tr>
+
+            <tr>
             <td></td>
               <td>
               <input type="radio" name="ext_leader_project1" id="ext_coordenador1">
