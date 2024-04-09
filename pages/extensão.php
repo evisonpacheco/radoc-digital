@@ -50,15 +50,15 @@ include 'login_verification.php';
             <tr>
               <td><input type="text" name="ext_doc1" id="ext_doc1"></td>
               <td>
-              <input type="text" placeholder="Título 1">
+              <input type="text" name="ext_titulo1" placeholder="Título 1">
               </td>
             </tr>
             <td></td>
               <td>
-              <input type="radio" name="leader_project1" id="ext_orientador1">
-              <label for="orientador1">Orientador</label>
-              <input type="radio" name="leader_project1" id="ext_coordenador1">
-              <label for="coordenador1">Coordenador</label>
+              <input type="radio" name="ext_leader_project1" id="ext_coordenador1">
+              <label for="orientador1">Coordenador</label>
+              <input type="radio" name="ext_leader_project1" id="ext_colaborador1">
+              <label for="coordenador1">Colaborador</label>
               </td>
             </tr>
             
@@ -69,16 +69,16 @@ include 'login_verification.php';
             <tr>
               <td><input type="text" name="ext_doc2" id="ext_doc2"></td>
               <td>
-              <input type="text" placeholder="Título 2">
+              <input type="text" name="ext_titulo2" placeholder="Título 2">
               </td>
             </tr>
             <tr>
               <td></td>
               <td>
-              <input type="radio" name="leader_project2" id="ext_orientador2">
-              <label for="orientador2">Orientador</label>
-              <input type="radio" name="leader_project2" id="ext_coordenador2">
-              <label for="coordenador2">Coordenador</label>
+              <input type="radio" name="ext_leader_project2" id="ext_coordenador2">
+              <label for="orientador2">Coordenador</label>
+              <input type="radio" name="ext_leader_project2" id="ext_colaborador2">
+              <label for="coordenador2">Colaborador</label>
               </td>
             </tr>
           </table>
@@ -111,9 +111,10 @@ include 'login_verification.php';
             <tr>
             	<td><input type="text" name="ext_enf_doc" id="ext_enf_doc"></td>
           		<td><input type="text" name="ext_atividade" id="ext_atividade"></td>
-                <td><input type="number" name="ext_chs" id="ext_chs" placeholder="CH total / 23 semanas"></td>
+                <td><input type="number" name="ext_chs_total" id="ext_chs_total" placeholder="CH total / 23 semanas"></td>
             </tr>
-
+            </table>
+            
             <div>
               <nav>
                 <input type="button" value="Novo">
@@ -121,9 +122,8 @@ include 'login_verification.php';
                 <input type="button" value="Excluir">
               </nav>
             </div>
-
         </form>
-
+          
       </div>
     </div>
     </main>
