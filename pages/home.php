@@ -125,8 +125,6 @@ $nome =  $_SESSION['user_name'];
         <div>
           <label>CEP:</label>
           <input type="text" name="cep" id="cep" pattern="[0-9]{8}">
-          <label>Volp:</label>
-          <input type="text" name="volp" id="volp">
         </div>
         
         <div>
