@@ -98,24 +98,24 @@
     .orientacaopage {
       width: calc(100vw - 17.525rem);
     
-          align-items: center;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-    
-          &__title {
-            background-color: #008A8A;
-            border-right: 1px solid #F7F7F7;
-            color: #F7F7F7;
-            font: 1rem 'Arial';
-            height: 2rem;
-            padding: 0.5rem 3rem;
-            width: 100%;
-    
-            align-items: center;
-            display: flex;
-            justify-content: center;
-          }
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &__title {
+        background-color: #008A8A;
+        border-right: 1px solid #F7F7F7;
+        color: #F7F7F7;
+        font: 1rem 'Arial';
+        height: 2rem;
+        padding: 0.5rem 3rem;
+        width: 100%;
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
     }
 }
 
