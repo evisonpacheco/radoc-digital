@@ -82,7 +82,7 @@ include 'login_verification.php';
             
             <div class="form__field">
               <label for="ori_type">Tipo de orientação: </label>
-              <select name="ori_tipo_orientacao" id="ori_type">
+              <select name="ori_tipo_orientacao" id="ori_tipo_orientacao">
                 <option value="Presencial">PRESENCIAL</option>
                 <option value="EAD">EAD</option>
               </select>
