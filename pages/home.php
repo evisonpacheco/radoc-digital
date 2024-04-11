@@ -124,7 +124,7 @@ $nome =  $_SESSION['user_name'];
         
         <div>
           <label>CEP:</label>
-          <input type="number" name="cep" id="cep" pattern="[0-9]{8}">
+          <input type="text" name="cep" id="cep" pattern="[0-9]{8}">
           <label>Volp:</label>
           <input type="text" name="volp" id="volp">
         </div>
@@ -133,7 +133,7 @@ $nome =  $_SESSION['user_name'];
           <label>E-Mail:</label>
           <input type="text" name="email" id="email">
           <label>Telefone:</label>
-          <input type="number" name="telefone" id="telefone" pattern="[0-9]{11}">
+          <input type="text" name="telefone" id="telefone" pattern="[0-9]{11}">
         </div>
 
             <div>
