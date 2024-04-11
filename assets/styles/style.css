@@ -344,4 +344,140 @@ table {
 }
 .ensinopage .ensinotable__input {
   width: 7rem;
+}
+.bodyeditar {
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.bodyeditar .headereditar {
+  align-items: center;
+  background-color: #27A844;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+.bodyeditar .headereditar__image {
+  height: 3rem;
+  width: 3rem;
+  padding: 0.5rem 0.5rem;
+}
+.bodyeditar .headereditar__title {
+  align-items: center;
+  color: #F7F7F7;
+  display: flex;
+  font: 1rem "Arial";
+  height: 2rem;
+}
+.bodyeditar .maineditar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.bodyeditar .maineditar .sidemenu {
+  height: calc(100vh - 10rem);
+}
+.bodyeditar .maineditar .sidemenu__title {
+  align-items: center;
+  background-color: #008A8A;
+  border-right: 1px solid #F7F7F7;
+  color: #F7F7F7;
+  display: flex;
+  font: 1rem "Arial";
+  height: 2rem;
+  padding: 0.5rem 3rem;
+  text-align: center;
+}
+.bodyeditar .maineditar .sidemenu__flex {
+  background-color: #008A8A;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 7rem);
+  justify-content: space-between;
+}
+.bodyeditar .maineditar .sidemenu__list {
+  display: flex;
+  flex-direction: column;
+}
+.bodyeditar .maineditar .sidemenu__list .sidemenu__element {
+  align-items: center;
+  background-color: #F7F7F7;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #008A8A;
+  color: #000000;
+  display: flex;
+  min-height: 3rem;
+  padding: 0 0.5rem;
+  text-decoration: none;
+  text-align: center;
+}
+.bodyeditar .maineditar .sidemenu__list .sidemenu__element:hover {
+  background-color: #C4C4C4;
+  border-right: 1px solid #008A8A;
+  color: #008A8A;
+  cursor: pointer;
+  font-weight: bold;
+}
+.bodyeditar .maineditar .sidemenu .sidemenu__logout {
+  background-color: #D63939;
+  border: 1px solid transparent;
+  color: #f7f7f7;
+  padding: 1rem 0;
+  text-align: center;
+}
+.bodyeditar .maineditar .sidemenu .sidemenu__logout:hover {
+  border: 1px solid #F7F7F7;
+  cursor: pointer;
+}
+.bodyeditar .maineditar .editarpage {
+  width: calc(100vw - 17.525rem);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bodyeditar .maineditar .editarpage__title {
+  background-color: #008A8A;
+  border-right: 1px solid #F7F7F7;
+  color: #F7F7F7;
+  font: 1rem "Arial";
+  height: 2rem;
+  padding: 0.5rem 3rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.bodyeditar .maineditar .editarpage .editarform {
+  padding: 1rem 0 10rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bodyeditar .maineditar .editarpage .editarform__element {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.bodyeditar .maineditar .editarpage .editarform__element--input {
+  border-radius: 10px;
+  height: 1.5rem;
+  text-align: center;
+  width: 20rem;
+}
+.bodyeditar .maineditar .editarpage .editarform__button {
+  margin: 0 auto;
+  background-color: #27A844;
+  border: 2px solid transparent;
+  color: #FFFFFF;
+  font: 1rem "Arial";
+  margin: 0.5rem 0;
+  padding: 0.5rem 3rem;
+  justify-content: center;
+}
+.bodyeditar .maineditar .editarpage .editarform__button:hover {
+  border: 2px solid #000000;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
