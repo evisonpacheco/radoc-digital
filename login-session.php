@@ -9,7 +9,7 @@ if (!empty($_POST['user_email']) && !empty($_POST['user_password'])) {
 	$email = $_POST['user_email'];
 	$senha = $_POST['user_password'];
 
-	$result_of_login_check = mysqli_query($conn, "SELECT user_id, user_name, user_registration, user_password, user_email, user_valid
+	$result_of_login_check = mysqli_query($conn, "SELECT user_id, user_name, user_registration, user_password, user_email, user_valid, user_nivel
 												  FROM registro 
 												  WHERE user_email = '" . $email . "' ");
 				
@@ -24,6 +24,7 @@ if (!empty($_POST['user_email']) && !empty($_POST['user_password'])) {
 					$_SESSION['user_registration'] = $result_row->user_registration;
 					$_SESSION['user_email'] = $result_row->user_email;
 					$_SESSION['user_valid'] = $result_row->user_valid;
+					$_SESSION['user_nivel'] = $result_row->user_nivel;
 					
 					if(isset($_SESSION['user_name'])){
 						header("Location: pages/home.php");
