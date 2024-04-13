@@ -1,6 +1,6 @@
 <?php
 
-require 'db-connection.php';
+require '..\db-connection.php';
 
 $nome = mysqli_real_escape_string($conn, $_POST['user_name']);
 $matricula = mysqli_real_escape_string($conn, $_POST['user_registration']);
@@ -37,7 +37,7 @@ if (!$erro){
 
 	if ($stmt->execute()) {
     		echo "Registro inserido com sucesso";
-   		header("Refresh: 3; url=index.html");
+   		header("Refresh: 3; url=..\index.html");
     		exit();
 	} else {
     		echo "Erro: " . $stmt->error;
