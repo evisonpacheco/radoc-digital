@@ -50,17 +50,39 @@
 			} ?>
 
       <div>
-          <div>
-            <form class ="form" action="../mudar-email.php" method="post">
-              <div class="form__field">
-              <label class="form__field-email" for="email_enviado"></label>
-              <input class="form__field-input" type="email" placeholder="E-mail" name="email_enviado" id="email_enviado" required>
-            </div>
-			<button class="form__button" type="submit">Mudar e-mail</button>
-			<br />
-			<button class="form__button" id="validar_email" type="submit" formaction="../enviar-email.php">Validar e-mail</button>
-            </form>
-          </div>
+		<form class="form" action="./process-profile.php" method="post">
+		
+		<div class="form__field">
+            <label class="form__field-user" for="user_name"></label>
+            <input class="form__field-input" type="text" maxlength ="50" placeholder="Nome completo" name="user_name" id="user_name" required>
+        </div>
+          
+        <div class="form__field">
+            <label class="form__field-user" for="user_password"></label>
+            <input class="form__field-input" type="password" maxlength="12" placeholder="Nova senha" name="user_password" id="user_password" required>
+        </div>
+
+        <div class="form__field">
+            <label class="form__field-user" for="user_confirm"></label>
+            <input class="form__field-input" type="password" maxlength="12" placeholder="Confirmar nova senha" name="user_confirm" id="user_confirm" required>
+        </div>
+            
+          <button class="form__button" type="submit">Atualizar</button>
+		  <br />
+          <button class="form__button" type="reset">Resetar</button>
+		</form>
+            
+		<form class ="form" action="../mudar-email.php" method="post">
+			
+        <div class="form__field">
+            <label class="form__field-email" for="email_enviado"></label>
+            <input class="form__field-input" type="email" placeholder="E-mail" name="email_enviado" id="email_enviado" required>
+        </div>
+		
+		<button class="form__button" type="submit">Mudar e-mail</button>
+		<br />
+		<button class="form__button" id="validar_email" type="submit" formaction="../enviar-email.php">Validar e-mail</button>
+        </form>
       </div>
 	  
     </div>
