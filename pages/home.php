@@ -192,14 +192,14 @@ $nome = $_SESSION['user_name'];
               <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
                   name="chs_pos_graduacao1" id="chs_pos_graduacao1"></td>
               <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
-                  name="chs_pos_graduacao1-total" id="chs_pos_graduacao1-total"></td>
+                  name="chs_pos_graduacao1_total" id="chs_pos_graduacao1_total"></td>
             </tr>
             <tr class="ensinotable__row">
               <th class="ensinotable__header">2º</th>
               <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
                   name="chs_pos_graduacao2" id="chs_pos_graduacao2"></td>
               <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
-                  name="chs_pos_graduacao2-total" id="chs_pos_graduacao2-total"></td>
+                  name="chs_pos_graduacao2_total" id="chs_pos_graduacao2_total"></td>
             </tr>
           </table>
 
