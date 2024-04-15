@@ -24,8 +24,7 @@ $nome = $_SESSION['user_name'];
       <div class="sidemenu__flex">
         <ul class="sidemenu__list">
           <a href="home.php" class="sidemenu__element">Página Inicial</a>
-          <a href="./editar-dados.php" class="sidemenu__element" style="text-decoration:none;color:inherit;">Editar
-            dados</a>
+          <a href="./editar-dados.php" class="sidemenu__element">Editar Dados</a>
           <a href="./orientacao.php" class="sidemenu__element">Orientação</a>
           <a href="./projeto.php" class="sidemenu__element">Projeto</a>
           <a href="./extensao.php" class="sidemenu__element">Extensão</a>
@@ -34,8 +33,7 @@ $nome = $_SESSION['user_name'];
           <a href="./academica.php" class="sidemenu__element">Acadêmica</a>
           <a href="./administrativa.php" class="sidemenu__element">Administrativo</a>
         </ul>
-        <div id="sair" class="sidemenu__logout"><a style="text-decoration:none;color:#F7F7F7;"
-            href="../logoff-session.php">SAIR</a></div>
+        <div id="sair" class="sidemenu__logout"><a href="../logoff-session.php">SAIR</a></div>
       </div>
     </div>
     <div class="homepage">
@@ -43,7 +41,7 @@ $nome = $_SESSION['user_name'];
         <h2 class="homepage__title">Página Inicial</h2>
         <p>Sistema de Cadastro de Atividades Docentes.</p>
         <div class="homepage__welcome">Bem Vindo,
-          <?php echo $nome;?>!
+          <?php echo $nome; ?>!
         </div>
       </div>
 
@@ -150,7 +148,8 @@ $nome = $_SESSION['user_name'];
           </div>
         </div>
 
-        <button onclick="changeName();" placeholder="0" type="button" class="expand__button" id="expand__button">&#9196; Expandir
+        <button onclick="changeName();" placeholder="0" type="button" class="expand__button" id="expand__button">&#9196;
+          Expandir
           &#9196;</button>
         <div class="ensinopage" style="display:block;">
           <p class="ensinopage__title">ENSINO</p>
@@ -163,17 +162,17 @@ $nome = $_SESSION['user_name'];
             </tr>
             <tr class="ensinotable__row">
               <th class="ensinotable__header">1º</th>
-              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" placeholder="0" type="number" name="chs_graduacao1"
-                  id="chs_graduacao1"></td>
-              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number" name="chs_graduacao1-total"
-                  id="chs_graduacao1-total"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" placeholder="0"
+                  type="number" name="chs_graduacao1" id="chs_graduacao1"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
+                  name="chs_graduacao1-total" id="chs_graduacao1-total"></td>
             </tr>
             <tr class="ensinotable__row">
               <th class="ensinotable__header">2º</th>
-              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number" name="chs_graduacao2"
-                  id="chs_graduacao2"></td>
-              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number" name="chs_graduacao2-total"
-                  id="chs_graduacao2-total"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
+                  name="chs_graduacao2" id="chs_graduacao2"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
+                  name="chs_graduacao2-total" id="chs_graduacao2-total"></td>
             </tr>
             <tr class="ensinotable__row--margin">
               <th class="ensinotable__header">Semestre</th>
@@ -182,15 +181,15 @@ $nome = $_SESSION['user_name'];
             </tr>
             <tr class="ensinotable__row">
               <th class="ensinotable__header">1º</th>
-              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number" name="chs_pos-graduacao1"
-                  id="chs_pos-graduacao1"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
+                  name="chs_pos-graduacao1" id="chs_pos-graduacao1"></td>
               <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
                   name="chs_pos-graduacao1-total" id="chs_pos-graduacao1-total"></td>
             </tr>
             <tr class="ensinotable__row">
               <th class="ensinotable__header">2º</th>
-              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number" name="chs_pos-graduacao2"
-                  id="chs_pos-graduacao2"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
+                  name="chs_pos-graduacao2" id="chs_pos-graduacao2"></td>
               <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
                   name="chs_pos-graduacao2-total" id="chs_pos-graduacao2-total"></td>
             </tr>
@@ -205,17 +204,17 @@ $nome = $_SESSION['user_name'];
             </tr>
             <tr class="ensinotable__row">
               <th class="ensinotable__header">1º</th>
-              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number" name="apc_graduacao1"
-                  id="apc_graduacao1"></td>
-              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number" name="apc_graduacao1-total"
-                  id="apc_graduacao1-total"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
+                  name="apc_graduacao1" id="apc_graduacao1"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
+                  name="apc_graduacao1-total" id="apc_graduacao1-total"></td>
             </tr>
             <tr>
               <th class="ensinotable__header">2º</th>
-              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number" name="apc_graduacao2"
-                  id="apc_graduacao2"></td>
-              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number" name="apc_graduacao2-total"
-                  id="apc_graduacao2-total"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
+                  name="apc_graduacao2" id="apc_graduacao2"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
+                  name="apc_graduacao2-total" id="apc_graduacao2-total"></td>
             </tr>
             <tr class="ensinotable__row">
               <th class="ensinotable__header">Semestre</th>
@@ -224,15 +223,15 @@ $nome = $_SESSION['user_name'];
             </tr>
             <tr class="ensinotable__row">
               <th class="ensinotable__header">1º</th>
-              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number" name="apc_pos-graduacao1"
-                  id="apc_pos-graduacao1"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
+                  name="apc_pos-graduacao1" id="apc_pos-graduacao1"></td>
               <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
                   name="apc_pos-graduacao1-total" id="apc_pos-graduacao1-total"></td>
             </tr>
             <tr>
               <th class="ensinotable__header">2º</th>
-              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number" name="apc_pos-graduacao2"
-                  id="apc_pos-graduacao2"></td>
+              <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
+                  name="apc_pos-graduacao2" id="apc_pos-graduacao2"></td>
               <td class="ensinotable__data"><input class="ensinotable__input" placeholder="0" type="number"
                   name="apc_pos-graduacao2-total" id="apc_pos-graduacao2-total"></td>
             </tr>
@@ -250,21 +249,31 @@ $nome = $_SESSION['user_name'];
             </tr>
             <tr>
               <th>1º</th>
-              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_orientacao1" id="aosrt_orientacao1"></td>
-              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_co-orientacao1" id="aosrt_co-orientacao1">
+              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_orientacao1"
+                  id="aosrt_orientacao1"></td>
+              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_co-orientacao1"
+                  id="aosrt_co-orientacao1">
               </td>
-              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_supervisao1" id="aosrt_supervisao1"></td>
-              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_perceptuto1" id="aosrt_perceptuto1"></td>
-              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_total1" id="aosrt_total1"></td>
+              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_supervisao1"
+                  id="aosrt_supervisao1"></td>
+              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_perceptuto1"
+                  id="aosrt_perceptuto1"></td>
+              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_total1" id="aosrt_total1">
+              </td>
             </tr>
             <tr>
               <th>2º</th>
-              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_orientacao2" id="aosrt_orientacao2"></td>
-              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_co-orientacao2" id="aosrt_co-orientacao2">
+              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_orientacao2"
+                  id="aosrt_orientacao2"></td>
+              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_co-orientacao2"
+                  id="aosrt_co-orientacao2">
               </td>
-              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_supervisao2" id="aosrt_supervisao2"></td>
-              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_perceptuto2" id="aosrt_perceptuto2"></td>
-              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_total2" id="aosrt_total2"></td>
+              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_supervisao2"
+                  id="aosrt_supervisao2"></td>
+              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_perceptuto2"
+                  id="aosrt_perceptuto2"></td>
+              <td><input class="ensinotable__input" placeholder="0" type="number" name="aosrt_total2" id="aosrt_total2">
+              </td>
             </tr>
           </table>
 
@@ -281,7 +290,8 @@ $nome = $_SESSION['user_name'];
             </tr>
             <tr>
               <td><input class="ensinotable--sa__input" placeholder="0" type="text" name="sa_doc" id="sa_doc"></td>
-              <td><input class="ensinotable--sa__input" placeholder="0" type="text" name="sa_matricula" id="sa_matricula"></td>
+              <td><input class="ensinotable--sa__input" placeholder="0" type="text" name="sa_matricula"
+                  id="sa_matricula"></td>
               <td><input class="ensinotable--sa__input" placeholder="0" type="text" name="sa_curso" id="sa_curso"></td>
               <td><input class="ensinotable--sa__input" placeholder="0" type="text" name="sa_tipo" id="sa_tipo"></td>
               <td><input class="ensinotable--sa__input" placeholder="0" type="text" name="sa_nivel" id="sa_nivel"></td>
@@ -301,7 +311,8 @@ $nome = $_SESSION['user_name'];
             </tr>
             <tr>
               <td><input class="ensinotable__input" placeholder="0" type="text" name="rtr_doc" id="rtr_doc"></td>
-              <td><input class="ensinotable__input" placeholder="0" type="text" name="rtr_matricula" id="rtr_matricula"></td>
+              <td><input class="ensinotable__input" placeholder="0" type="text" name="rtr_matricula" id="rtr_matricula">
+              </td>
               <td><input class="ensinotable__input" placeholder="0" type="text" name="rtr_tipo" id="rtr_tipo"></td>
               <td><input class="ensinotable__input" placeholder="0" type="number" name="rtr_chs1" id="rtr_chs1"></td>
               <td><input class="ensinotable__input" placeholder="0" type="number" name="rtr_chs2" id="rtr_chs2"></td>
@@ -319,7 +330,8 @@ $nome = $_SESSION['user_name'];
             </tr>
             <tr>
               <td><input class="ensinotable__input" placeholder="0" type="text" name="be_doc" id="be_doc"></td>
-              <td><input class="ensinotable__input" placeholder="0" type="text" name="be_descricao" id="be_descricao"></td>
+              <td><input class="ensinotable__input" placeholder="0" type="text" name="be_descricao" id="be_descricao">
+              </td>
               <td><input class="ensinotable__input" placeholder="0" type="text" name="be_tipo" id="be_tipo"></td>
               <td><input class="ensinotable__input" placeholder="0" type="number" name="be_chs1" id="be_chs1"></td>
               <td><input class="ensinotable__input" placeholder="0" type="number" name="be_chs2" id="be_chs2"></td>
@@ -333,7 +345,8 @@ $nome = $_SESSION['user_name'];
             </tr>
             <tr>
               <td><input class="ensinotable__input" placeholder="0" type="text" name="ad_doc1" id="ad_doc1"></td>
-              <td><input class="ensinotable__input" placeholder="0" type="text" name="ad_semestre1" id="ad_semestre1"></td>
+              <td><input class="ensinotable__input" placeholder="0" type="text" name="ad_semestre1" id="ad_semestre1">
+              </td>
             </tr>
             <tr>
               <th>Nº Doc</th>
@@ -341,7 +354,8 @@ $nome = $_SESSION['user_name'];
             </tr>
             <tr>
               <td><input class="ensinotable__input" placeholder="0" type="text" name="ad_doc2" id="ad_doc2"></td>
-              <td><input class="ensinotable__input" placeholder="0" type="text" name="ad_semestre2" id="ad_semestre2"></td>
+              <td><input class="ensinotable__input" placeholder="0" type="text" name="ad_semestre2" id="ad_semestre2">
+              </td>
             </tr>
           </table>
           <nav class="navigation">

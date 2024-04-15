@@ -193,6 +193,7 @@ table {
   color: #f7f7f7;
   padding: 1rem 0;
   text-align: center;
+  text-decoration: none;
 }
 .bodyhome .homemain .sidemenu .sidemenu__logout:hover {
   border: 1px solid #F7F7F7;
