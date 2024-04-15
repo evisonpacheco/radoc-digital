@@ -164,6 +164,21 @@ table {
   display: flex;
   justify-content: space-between;
 }
+.bodyhome .homemain .sidemenu__flex .sidemenu__logout {
+  background-color: #D63939;
+  border: 1px solid transparent;
+  padding: 1rem 0;
+  text-align: center;
+  text-decoration: none;
+}
+.bodyhome .homemain .sidemenu__flex .sidemenu__logout:hover {
+  border: 1px solid #F7F7F7;
+  cursor: pointer;
+}
+.bodyhome .homemain .sidemenu__flex .sidemenu__logout--button {
+  color: #F7F7F7;
+  text-decoration: none;
+}
 .bodyhome .homemain .sidemenu__list {
   display: flex;
   flex-direction: column;
@@ -186,18 +201,6 @@ table {
   color: #008A8A;
   cursor: pointer;
   font-weight: bold;
-}
-.bodyhome .homemain .sidemenu .sidemenu__logout {
-  background-color: #D63939;
-  border: 1px solid transparent;
-  color: #f7f7f7;
-  padding: 1rem 0;
-  text-align: center;
-  text-decoration: none;
-}
-.bodyhome .homemain .sidemenu .sidemenu__logout:hover {
-  border: 1px solid #F7F7F7;
-  cursor: pointer;
 }
 .bodyhome .homemain .homepage {
   width: 85%;

@@ -33,7 +33,7 @@ $nome = $_SESSION['user_name'];
           <a href="./academica.php" class="sidemenu__element">Acadêmica</a>
           <a href="./administrativa.php" class="sidemenu__element">Administrativo</a>
         </ul>
-        <div id="sair" class="sidemenu__logout"><a href="../logoff-session.php">SAIR</a></div>
+        <div id="sair" class="sidemenu__logout"><a class="sidemenu__logout--button" href="../logoff-session.php">SAIR</a></div>
       </div>
     </div>
     <div class="homepage">

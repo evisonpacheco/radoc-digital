@@ -55,6 +55,24 @@
 
         display: flex;
         justify-content: space-between;
+
+        .sidemenu__logout {
+          background-color: #D63939;
+          border: 1px solid transparent;
+          padding: 1rem 0;
+          text-align: center;
+          text-decoration: none;
+
+          &:hover {
+            border: 1px solid #F7F7F7;
+            cursor: pointer;
+          }
+
+          &--button {
+            color: #F7F7F7;
+            text-decoration: none;
+          }
+        }
       }
 
       &__list {
@@ -81,20 +99,6 @@
             cursor: pointer;
             font-weight: bold;
           }
-        }
-      }
-
-      .sidemenu__logout {
-        background-color: #D63939;
-        border: 1px solid transparent;
-        color: #f7f7f7;
-        padding: 1rem 0;
-        text-align: center;
-        text-decoration: none;
-
-        &:hover {
-          border: 1px solid #F7F7F7;
-          cursor: pointer;
         }
       }
     }
