@@ -564,6 +564,21 @@ input[type=number] {
   height: calc(100vh - 7rem);
   justify-content: space-between;
 }
+.bodyeditar .maineditar .sidemenu__flex .sidemenu__logout {
+  background-color: #D63939;
+  border: 1px solid transparent;
+  padding: 1rem 0;
+  text-align: center;
+  text-decoration: none;
+}
+.bodyeditar .maineditar .sidemenu__flex .sidemenu__logout:hover {
+  border: 1px solid #F7F7F7;
+  cursor: pointer;
+}
+.bodyeditar .maineditar .sidemenu__flex .sidemenu__logout--button {
+  color: #F7F7F7;
+  text-decoration: none;
+}
 .bodyeditar .maineditar .sidemenu__list {
   display: flex;
   flex-direction: column;
@@ -587,17 +602,6 @@ input[type=number] {
   cursor: pointer;
   font-weight: bold;
 }
-.bodyeditar .maineditar .sidemenu .sidemenu__logout {
-  background-color: #D63939;
-  border: 1px solid transparent;
-  color: #f7f7f7;
-  padding: 1rem 0;
-  text-align: center;
-}
-.bodyeditar .maineditar .sidemenu .sidemenu__logout:hover {
-  border: 1px solid #F7F7F7;
-  cursor: pointer;
-}
 .bodyeditar .maineditar .editarpage {
   width: calc(100vw - 17.525rem);
   align-items: center;
@@ -618,11 +622,14 @@ input[type=number] {
   justify-content: center;
 }
 .bodyeditar .maineditar .editarpage .editarform {
-  padding: 1rem 0 10rem;
+  padding: 1rem 0;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.bodyeditar .maineditar .editarpage .editarform__title {
+  font: 1.4rem "Arial";
 }
 .bodyeditar .maineditar .editarpage .editarform__element {
   padding: 1rem 0;

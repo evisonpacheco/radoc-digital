@@ -52,6 +52,24 @@
         flex-direction: column;
         height: calc(100vh - 7rem);
         justify-content: space-between;
+
+        .sidemenu__logout {
+          background-color: #D63939;
+          border: 1px solid transparent;
+          padding: 1rem 0;
+          text-align: center;
+          text-decoration: none;
+
+          &:hover {
+            border: 1px solid #F7F7F7;
+            cursor: pointer;
+          }
+
+          &--button {
+            color: #F7F7F7;
+            text-decoration: none;
+          }
+        }
       }
 
       &__list {
@@ -79,19 +97,6 @@
           }
         }
       }
-
-      .sidemenu__logout {
-        background-color: #D63939;
-        border: 1px solid transparent;
-        color: #f7f7f7;
-        padding: 1rem 0;
-        text-align: center;
-
-        &:hover {
-          border: 1px solid #F7F7F7;
-          cursor: pointer;
-        }
-      }
     }
 
     .editarpage {
@@ -117,13 +122,17 @@
       }
 
       .editarform {
-        padding: 1rem 0 10rem;
+        padding: 1rem 0;
 
         align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
+
+        &__title {
+          font: 1.4rem 'Arial';
+        }
+
         &__element {
           padding: 1rem 0;
 
