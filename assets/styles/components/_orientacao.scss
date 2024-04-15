@@ -29,97 +29,126 @@
 
 .mainorientacao {
   display: flex;
-    flex-direction: row;
-    width: 100%;
+  flex-direction: row;
+  width: 100%;
 
-    .sidemenu {
-      height: calc(100vh - 10rem);
+  .sidemenu {
+    height: calc(100vh - 10rem);
 
-      &__title {
-        align-items: center;
-        background-color: #008A8A;
-        border-right: 1px solid #F7F7F7;
-        color: #F7F7F7;
-        display: flex;
-        font: 1rem 'Arial';
-        height: 2rem;
-        padding: 0.5rem 3rem;
-        text-align: center;
-      }
+    &__title {
+      align-items: center;
+      background-color: #008A8A;
+      border-right: 1px solid #F7F7F7;
+      color: #F7F7F7;
+      display: flex;
+      font: 1rem 'Arial';
+      height: 2rem;
+      padding: 0.5rem 3rem;
+      text-align: center;
+    }
 
-      &__flex {
-        background-color: #008A8A;
-        display: flex;
-        flex-direction: column;
-        height: calc(100vh - 7rem);
-        justify-content: space-between;
-      }
-
-      &__list {
-        display: flex;
-        flex-direction: column;
-
-        .sidemenu__element {
-          align-items: center;
-          background-color: #F7F7F7;
-          border: 1px solid transparent;
-          border-bottom: 1px solid #008A8A;
-          color: #000000;
-          display: flex;
-          min-height: 3rem;
-          padding: 0 0.5rem;
-          text-decoration: none;
-          text-align: center;
-
-          &:hover {
-            background-color: #C4C4C4;
-            border-right: 1px solid #008A8A;
-            color: #008A8A;
-            cursor: pointer;
-            font-weight: bold;
-          }
-        }
-      }
+    &__flex {
+      background-color: #008A8A;
+      display: flex;
+      flex-direction: column;
+      height: calc(100vh - 7rem);
+      justify-content: space-between;
 
       .sidemenu__logout {
         background-color: #D63939;
         border: 1px solid transparent;
-        color: #f7f7f7;
         padding: 1rem 0;
         text-align: center;
+        text-decoration: none;
 
         &:hover {
           border: 1px solid #F7F7F7;
           cursor: pointer;
         }
+
+        &--button {
+          color: #F7F7F7;
+          text-decoration: none;
+        }
       }
     }
-    
-    .orientacaopage {
-      width: calc(100vw - 17.525rem);
-    
-      align-items: center;
+
+    &__list {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
 
-      &__title {
-        background-color: #008A8A;
-        border-right: 1px solid #F7F7F7;
-        color: #F7F7F7;
-        font: 1rem 'Arial';
-        height: 2rem;
-        padding: 0.5rem 3rem;
-        width: 100%;
-
+      .sidemenu__element {
         align-items: center;
+        background-color: #F7F7F7;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #008A8A;
+        color: #000000;
         display: flex;
-        justify-content: center;
+        min-height: 3rem;
+        padding: 0 0.5rem;
+        text-decoration: none;
+        text-align: center;
+
+        &:hover {
+          background-color: #C4C4C4;
+          border-right: 1px solid #008A8A;
+          color: #008A8A;
+          cursor: pointer;
+          font-weight: bold;
+        }
       }
     }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    .sidemenu__element {
+      align-items: center;
+      background-color: #F7F7F7;
+      border: 1px solid transparent;
+      border-bottom: 1px solid #008A8A;
+      color: #000000;
+      display: flex;
+      min-height: 3rem;
+      padding: 0 0.5rem;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover {
+        background-color: #C4C4C4;
+        border-right: 1px solid #008A8A;
+        color: #008A8A;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    }
+  }
 }
 
+.orientacaopage {
+  width: calc(100vw - 17.525rem);
 
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__title {
+    background-color: #008A8A;
+    border-right: 1px solid #F7F7F7;
+    color: #F7F7F7;
+    font: 1rem 'Arial';
+    height: 2rem;
+    padding: 0.5rem 3rem;
+    width: 100%;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .orientacao__form {
   align-items: center;

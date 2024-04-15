@@ -381,6 +381,21 @@ table {
   height: calc(100vh - 7rem);
   justify-content: space-between;
 }
+.mainorientacao .sidemenu__flex .sidemenu__logout {
+  background-color: #D63939;
+  border: 1px solid transparent;
+  padding: 1rem 0;
+  text-align: center;
+  text-decoration: none;
+}
+.mainorientacao .sidemenu__flex .sidemenu__logout:hover {
+  border: 1px solid #F7F7F7;
+  cursor: pointer;
+}
+.mainorientacao .sidemenu__flex .sidemenu__logout--button {
+  color: #F7F7F7;
+  text-decoration: none;
+}
 .mainorientacao .sidemenu__list {
   display: flex;
   flex-direction: column;
@@ -404,25 +419,38 @@ table {
   cursor: pointer;
   font-weight: bold;
 }
-.mainorientacao .sidemenu .sidemenu__logout {
-  background-color: #D63939;
+.mainorientacao__list {
+  display: flex;
+  flex-direction: column;
+}
+.mainorientacao__list .sidemenu__element {
+  align-items: center;
+  background-color: #F7F7F7;
   border: 1px solid transparent;
-  color: #f7f7f7;
-  padding: 1rem 0;
+  border-bottom: 1px solid #008A8A;
+  color: #000000;
+  display: flex;
+  min-height: 3rem;
+  padding: 0 0.5rem;
+  text-decoration: none;
   text-align: center;
 }
-.mainorientacao .sidemenu .sidemenu__logout:hover {
-  border: 1px solid #F7F7F7;
+.mainorientacao__list .sidemenu__element:hover {
+  background-color: #C4C4C4;
+  border-right: 1px solid #008A8A;
+  color: #008A8A;
   cursor: pointer;
+  font-weight: bold;
 }
-.mainorientacao .orientacaopage {
+
+.orientacaopage {
   width: calc(100vw - 17.525rem);
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.mainorientacao .orientacaopage__title {
+.orientacaopage__title {
   background-color: #008A8A;
   border-right: 1px solid #F7F7F7;
   color: #F7F7F7;
