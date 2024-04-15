@@ -1,31 +1,59 @@
 .ensinopage {
-  overflow-x: auto;
+  padding: 0 1rem;
 
   display: flex;
   flex-direction: column;
 
   &__title {
+    background-color: #27A844;
     font: 1.5rem 'Arial';
+    margin: 2rem 0 0;
     text-align: center;
+    padding: 1rem 0;
   }
 
   .ensinotable {
-    //max-width: 2rem;
-     
-    &__input {
-      width: 7rem;     
+    background-color: #008A8A;
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 0.5rem;
+    font: 1rem 'Arial';
+    margin: 1rem 0;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    &--sa {
+
+      &__input {
+        text-align: center;
+        width: 6rem;
+      }
     }
 
-    &__row {
-           
-    } 
-    
-    &__header {
-          
+    &__title {
+      font: 1.25rem 'Arial';
+      height: 2rem;
+      padding: 0.5rem;
+
+      align-items: center;
+      display: flex;
     }
-    
-    &__data {
-       
+
+    &__input {
+      text-align: center;
+      width: 6rem;
     }
   }
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  -moz-placeholder: 0;
 }
