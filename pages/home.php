@@ -30,6 +30,7 @@ $nome =  $_SESSION['user_name'];
           <a href="./qualificação.php" class="sidemenu__element">Qualificação</a>
           <a href="./academica.php" class="sidemenu__element">Acadêmica</a>
           <a href="./administrativa.php" class="sidemenu__element">Administrativo</a>
+	  <a href="./pagina-adm.php" class="sidemenu__element">Página Administrativa</a>
         </ul>
         <div id="sair" class="sidemenu__logout"><a style="text-decoration:none;color:#F7F7F7;" href="../logoff-session.php">SAIR</a></div>
       </div>
@@ -125,8 +126,6 @@ $nome =  $_SESSION['user_name'];
         <div>
           <label>CEP:</label>
           <input type="text" name="cep" id="cep" pattern="[0-9]{8}">
-          <label>Volp:</label>
-          <input type="text" name="volp" id="volp">
         </div>
         
         <div>

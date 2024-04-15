@@ -26,12 +26,11 @@
       <div class="sidemenu__flex">
         <ul class="sidemenu__list">
           <a href="home.php" class="sidemenu__element">Página Inicial</a>
-          <a href="#" class="sidemenu__element">Cadastrar Novo RADOC</a>
-		  <a href="./editar-dados.php" class="sidemenu__element" style="text-decoration:none;color:inherit;" >Editar dados</a>
-          <a href="./ensino.php" class="sidemenu__element">Ensino</a>
+	<a href="./editar-dados.php" class="sidemenu__element" style="text-decoration:none;color:inherit;">Editar dados</a>
           <a href="./orientacao.php" class="sidemenu__element">Orientação</a>
           <a href="./projeto.php" class="sidemenu__element">Projeto</a>
-          <a href="#" class="sidemenu__element">Extenção</a>
+          <a href="./extensao.php" class="sidemenu__element">Extensão</a>
+          <a href="./gestao.php" class="sidemenu__element">Gestão</a>
           <a href="./qualificação.php" class="sidemenu__element">Qualificação</a>
           <a href="./academica.php" class="sidemenu__element">Acadêmica</a>
           <a href="./administrativa.php" class="sidemenu__element">Administrativo</a>
@@ -50,17 +49,39 @@
 			} ?>
 
       <div>
-          <div>
-            <form class ="form" action="../mudar-email.php" method="post">
-              <div class="form__field">
-              <label class="form__field-email" for="email_enviado"></label>
-              <input class="form__field-input" type="email" placeholder="E-mail" name="email_enviado" id="email_enviado" required>
-            </div>
-			<button class="form__button" type="submit">Mudar e-mail</button>
-			<br />
-			<button class="form__button" id="validar_email" type="submit" formaction="../enviar-email.php">Validar e-mail</button>
-            </form>
-          </div>
+		<form class="form" action="./process-profile.php" method="post">
+		
+		<div class="form__field">
+            <label class="form__field-user" for="user_name"></label>
+            <input class="form__field-input" type="text" maxlength ="50" placeholder="Nome completo" name="user_name" id="user_name" required>
+        </div>
+          
+        <div class="form__field">
+            <label class="form__field-user" for="user_password"></label>
+            <input class="form__field-input" type="password" maxlength="12" placeholder="Nova senha" name="user_password" id="user_password" required>
+        </div>
+
+        <div class="form__field">
+            <label class="form__field-user" for="user_confirm"></label>
+            <input class="form__field-input" type="password" maxlength="12" placeholder="Confirmar nova senha" name="user_confirm" id="user_confirm" required>
+        </div>
+            
+          <button class="form__button" type="submit">Atualizar</button>
+		  <br />
+          <button class="form__button" type="reset">Resetar</button>
+		</form>
+            
+		<form class ="form" action="../mudar-email.php" method="post">
+			
+        <div class="form__field">
+            <label class="form__field-email" for="email_enviado"></label>
+            <input class="form__field-input" type="email" placeholder="E-mail" name="email_enviado" id="email_enviado" required>
+        </div>
+		
+		<button class="form__button" type="submit">Mudar e-mail</button>
+		<br />
+		<button class="form__button" id="validar_email" type="submit" formaction="../enviar-email.php">Validar e-mail</button>
+        </form>
       </div>
 	  
     </div>
