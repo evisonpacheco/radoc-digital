@@ -1,7 +1,7 @@
 <?php
 
 require '../db-connection.php';
-require ('fpdf/fpdf.php');
+require('fpdf/fpdf.php');
 
 session_start();
 
@@ -10,7 +10,7 @@ $erro = false;
 $id = $_SESSION['user_id'];
 
 //home.php
-$nome = mysqli_real_escape_string($conn, $_POST['user_name']);
+$nome = mysqli_real_escape_string($conn, $_POST['nome']);
 $classe = mysqli_real_escape_string($conn, $_POST['classe']);
 $regime_trabalho = mysqli_real_escape_string($conn, $_POST['regime_trabalho']);
 $nivel = mysqli_real_escape_string($conn, $_POST['nivel']);
@@ -23,53 +23,57 @@ $cidade = mysqli_real_escape_string($conn, $_POST['cidade']);
 $bairro = mysqli_real_escape_string($conn, $_POST['bairro']);
 $uf = mysqli_real_escape_string($conn, $_POST['uf']);
 $cep = mysqli_real_escape_string($conn, $_POST['cep']);
-$email = mysqli_real_escape_string($conn, $_POST['user_email']);
+$email = mysqli_real_escape_string($conn, $_POST['email']);
 $telefone = mysqli_real_escape_string($conn, $_POST['telefone']);
 
 //home.php (Ensino)
-$chs_graduacao1 = mysqli_real_escape_string($conn, $_POST['chs_graduacao1']);
-$chs_posgraduacao1 = mysqli_real_escape_string($conn, $_POST['chs_pos_graduacao1']);
-$chs_total1 = mysqli_real_escape_string($conn, $_POST['chs_total1']);
-$chs_graduacao2 = mysqli_real_escape_string($conn, $_POST['chs_graduacao2']);
-$chs_posgraduacao2 = mysqli_real_escape_string($conn, $_POST['chs_pos_graduacao2']);
-$chs_total2 = mysqli_real_escape_string($conn, $_POST['chs_total2']);
-$apc_graduacao1 = mysqli_real_escape_string($conn, $_POST['apc_graduacao1']);
-$apc_posgraduacao1 = mysqli_real_escape_string($conn, $_POST['apc_pos_graduacao1']);
-$apc_total1 = mysqli_real_escape_string($conn, $_POST['apc_total1']);
-$apc_graduacao2 = mysqli_real_escape_string($conn, $_POST['apc_graduacao2']);
-$apc_posgraduacao2 = mysqli_real_escape_string($conn, $_POST['apc_pos_graduacao2']);
-$apc_total2 = mysqli_real_escape_string($conn, $_POST['apc_total2']);
-$aosrt_orientacao1 = mysqli_real_escape_string($conn, $_POST['aosrt_orientacao1']);
-$aosrt_coorientacao1 = mysqli_real_escape_string($conn, $_POST['aosrt_co_orientacao1']);
-$aosrt_supervisao1 = mysqli_real_escape_string($conn, $_POST['aosrt_supervisao1']);
-$aosrt_perceptuto1 = mysqli_real_escape_string($conn, $_POST['aosrt_perceptuto1']);
-$aosrt_total1 = mysqli_real_escape_string($conn, $_POST['aosrt_total1']);
-$aosrt_orientacao2 = mysqli_real_escape_string($conn, $_POST['aosrt_orientacao2']);
-$aosrt_co_orientacao2 = mysqli_real_escape_string($conn, $_POST['aosrt_co_orientacao2']);
-$aosrt_supervisao2 = mysqli_real_escape_string($conn, $_POST['aosrt_supervisao2']);
-$aosrt_perceptuto2 = mysqli_real_escape_string($conn, $_POST['aosrt_perceptuto2']);
-$aosrt_total2 = mysqli_real_escape_string($conn, $_POST['aosrt_total2']);
-$sa_doc = mysqli_real_escape_string($conn, $_POST['sa_doc']);
-$sa_matricula = mysqli_real_escape_string($conn, $_POST['sa_matricula']);
-$sa_curso = mysqli_real_escape_string($conn, $_POST['sa_curso']);
-$sa_tipo = mysqli_real_escape_string($conn, $_POST['sa_tipo']);
-$sa_nivel = mysqli_real_escape_string($conn, $_POST['sa_nivel']);
-$sa_chs1 = mysqli_real_escape_string($conn, $_POST['sa_chs1']);
-$sa_chs2 = mysqli_real_escape_string($conn, $_POST['sa_chs2']);
-$rtr_doc = mysqli_real_escape_string($conn, $_POST['rtr_doc']);
-$rtr_matricula = mysqli_real_escape_string($conn, $_POST['rtr_matricula']);
-$rtr_tipo = mysqli_real_escape_string($conn, $_POST['rtr_tipo']);
-$rtr_chs1 = mysqli_real_escape_string($conn, $_POST['rtr_chs1']);
-$rtr_chs2 = mysqli_real_escape_string($conn, $_POST['rtr_chs2']);
-$be_doc = mysqli_real_escape_string($conn, $_POST['be_doc']);
-$be_descricao = mysqli_real_escape_string($conn, $_POST['be_descricao']);
-$be_tipo = mysqli_real_escape_string($conn, $_POST['be_tipo']);
-$be_chs1 = mysqli_real_escape_string($conn, $_POST['be_chs1']);
-$be_chs2 = mysqli_real_escape_string($conn, $_POST['be_chs2']);
-$ad_doc1 = mysqli_real_escape_string($conn, $_POST['ad_doc1']);
-$ad_semestre1 = mysqli_real_escape_string($conn, $_POST['ad_semestre1']);
-$ad_doc2 = mysqli_real_escape_string($conn, $_POST['ad_doc2']);
-$ad_semestre = mysqli_real_escape_string($conn, $_POST['ad_semestre']);
+$chs_graduacao1 = mysqli_real_escape_string($conn, $_POST['chs_graduacao1'];
+    $chs_graduacao1_total = mysqli_real_escape_string($conn, $_POST['chs_graduacao1_total'];
+    $chs_graduacao2 = mysqli_real_escape_string($conn, $_POST['chs_graduacao2'];
+    $chs_graduacao2_total = mysqli_real_escape_string($conn, $_POST['chs_graduacao2_total'];
+    $chs_posgraduacao1 = mysqli_real_escape_string($conn, $_POST['chs_pos_graduacao1'];
+    $chs_posgraduacao1_total = mysqli_real_escape_string($conn, $_POST['chs_pos_graduacao1_total'];
+    $chs_posgraduacao2 = mysqli_real_escape_string($conn, $_POST['chs_pos_graduacao2'];
+    $chs_posgraduacao2_total = mysqli_real_escape_string($conn, $_POST['chs_pos_graduacao2_total'];
+    $apc_graduacao1 = mysqli_real_escape_string($conn, $_POST['apc_graduacao1'];
+    $apc_graduacao1_total = mysqli_real_escape_string($conn, $_POST['apc_graduacao1_total'];
+    $apc_graduacao2 = mysqli_real_escape_string($conn, $_POST['apc_graduacao2'];
+    $apc_graduacao2_total = mysqli_real_escape_string($conn, $_POST['apc_graduacao2_total'];
+    $apc_posgraduacao1 = mysqli_real_escape_string($conn, $_POST['apc_pos_graduacao1'];
+    $apc_posgraduacao1_total = mysqli_real_escape_string($conn, $_POST['apc_pos_graduacao1_total'];
+    $apc_posgraduacao2 = mysqli_real_escape_string($conn, $_POST['apc_pos_graduacao2'];
+    $apc_posgraduacao2_total = mysqli_real_escape_string($conn, $_POST['apc_pos_graduacao2_total'];
+    $aosrt_orientacao1 = mysqli_real_escape_string($conn, $_POST['aosrt_orientacao1'];
+    $aosrt_coorientacao1 = mysqli_real_escape_string($conn, $_POST['aosrt_co_orientacao1'];
+    $aosrt_supervisao1 = mysqli_real_escape_string($conn, $_POST['aosrt_supervisao1'];
+    $aosrt_perceptuto1 = mysqli_real_escape_string($conn, $_POST['aosrt_perceptuto1'];
+    $aosrt_total1 = mysqli_real_escape_string($conn, $_POST['aosrt_total1'];
+    $aosrt_orientacao2 = mysqli_real_escape_string($conn, $_POST['aosrt_orientacao2'];
+    $aosrt_coorientacao2 = mysqli_real_escape_string($conn, $_POST['aosrt_co_orientacao2'];
+    $aosrt_supervisao2 = mysqli_real_escape_string($conn, $_POST['aosrt_supervisao2'];
+    $aosrt_perceptuto2 = mysqli_real_escape_string($conn, $_POST['aosrt_perceptuto2'];
+    $aosrt_total2 = mysqli_real_escape_string($conn, $_POST['aosrt_total2'];
+    $sa_doc = mysqli_real_escape_string($conn, $_POST['sa_doc'];
+    $sa_matricula = mysqli_real_escape_string($conn, $_POST['sa_matricula'];
+    $sa_curso = mysqli_real_escape_string($conn, $_POST['sa_curso'];
+    $sa_tipo = mysqli_real_escape_string($conn, $_POST['sa_tipo'];
+    $sa_nivel = mysqli_real_escape_string($conn, $_POST['sa_nivel'];
+    $sa_chs1 = mysqli_real_escape_string($conn, $_POST['sa_chs1'];
+    $sa_chs2 = mysqli_real_escape_string($conn, $_POST['sa_chs2'];
+    $rtr_doc = mysqli_real_escape_string($conn, $_POST['rtr_doc'];
+    $rtr_matricula = mysqli_real_escape_string($conn, $_POST['rtr_matricula'];
+    $rtr_tipo = mysqli_real_escape_string($conn, $_POST['rtr_tipo'];
+    $rtr_chs1 = mysqli_real_escape_string($conn, $_POST['rtr_chs1'];
+    $rtr_chs2 = mysqli_real_escape_string($conn, $_POST['rtr_chs2'];
+    $be_doc = mysqli_real_escape_string($conn, $_POST['be_doc'];
+    $be_descricao = mysqli_real_escape_string($conn, $_POST['be_descricao'];
+    $be_tipo = mysqli_real_escape_string($conn, $_POST['be_tipo'];
+    $be_chs1 = mysqli_real_escape_string($conn, $_POST['be_chs1'];
+    $be_chs2 = mysqli_real_escape_string($conn, $_POST['be_chs2'];
+    $ad_doc1 = mysqli_real_escape_string($conn, $_POST['ad_doc1'];
+    $ad_semestre1 = mysqli_real_escape_string($conn, $_POST['ad_semestre1'];
+    $ad_doc2 = mysqli_real_escape_string($conn, $_POST['ad_doc2'];
+    $ad_semestre2 = mysqli_real_escape_string($conn, $_POST['ad_semestre2'];
 
 //academica.php
 //$aca_tabela = mysqli_real_escape_string($conn, $_POST['aca_table']);
@@ -259,9 +263,9 @@ $stmt1 = $conn->prepare("INSERT INTO home (user_name, classe, regime_trabalho, n
 	break;
 	
 	case 2:
-$stmt2 = $conn->prepare("INSERT INTO ensino (chs_graduacao1, chs_pos_graduacao1, chs_total1, chs_graduacao2, chs_pos_graduacao2, chs_total2, apc_graduacao1, apc_pos_graduacao1, apc_total1, apc_graduacao2, apc_pos_graduacao2, apc_total2, aosrt_orientacao1, aosrt_co_orientacao1, aosrt_supervisao1, aosrt_perceptuto1, aosrt_total1, aosrt_orientacao2, aosrt_co_orientacao2, aosrt_supervisao2, aosrt_perceptuto2, aosrt_total2, sa_doc, sa_matricula, sa_curso, sa_tipo, sa_nivel, sa_chs1, sa_chs2, rtr_doc, rtr_matricula, rtr_tipo, rtr_chs1, rtr_chs2, be_doc, be_descricao, be_tipo, be_chs1, be_chs2, ad_doc1, ad_semestre1, ad_doc2, ad_semestre, user_id)  VALUES 	(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+$stmt2 = $conn->prepare("INSERT INTO ensino (chs_graduacao1, chs_graduacao1_total, chs_graduacao2, chs_graduacao2_total, chs_pos_graduacao1, chs_pos_graduacao1_total, chs_pos_graduacao2, chs_pos_graduacao2_total, apc_graduacao1, apc_graduacao1_total, apc_graduacao2, apc_graduacao2_total, apc_pos_graduacao1, apc_pos_graduacao1_total, apc_pos_graduacao2, apc_pos_graduacao2_total, aosrt_orientacao1, aosrt_co_orientacao1, aosrt_supervisao1, aosrt_perceptuto1, aosrt_total1, aosrt_orientacao2, aosrt_co_orientacao2, aosrt_supervisao2, aosrt_perceptuto2, aosrt_total2, sa_doc, sa_matricula, sa_curso, sa_tipo, sa_nivel, sa_chs1, sa_chs2, rtr_doc, rtr_matricula, rtr_tipo, rtr_chs1, rtr_chs2, be_doc, be_descricao, be_tipo, be_chs1, be_chs2, ad_doc1, ad_semestre1, ad_doc2, ad_semestre, user_id)  VALUES 	(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
-	$stmt2->bind_param("ssssssssssssssssssssssssssssssssssssssssssssi", $chs_graduacao1, $chs_posgraduacao1, $chs_total1, $chs_graduacao2, $chs_posgraduacao2, $chs_total2, $apc_graduacao1, $apc_posgraduacao1, $apc_total1, $apc_graduacao2, $apc_posgraduacao2, $apc_total2, $aosrt_orientacao1, $aosrt_coorientacao1, $aosrt_supervisao1, $aosrt_perceptuto1, $aosrt_total1, $aosrt_orientacao2, $aosrt_co_orientacao2, $aosrt_supervisao2, $aosrt_perceptuto2, $aosrt_total2, $sa_doc, $sa_matricula, $sa_curso, $sa_tipo, $sa_nivel, $sa_chs1, $sa_chs2, $rtr_doc, $rtr_matricula, $rtr_tipo, $rtr_chs1, $rtr_chs2, $be_doc, $be_descricao, $be_tipo, $be_chs1, $be_chs2, $ad_doc1, $ad_semestre1, $ad_doc2, $ad_semestre, $id);
+	$stmt2->bind_param("ssssssssssssssssssssssssssssssssssssssssssssssssi", $chs_graduacao1, $chs_graduacao1_total, $chs_graduacao2, $chs_graduacao2_total, $chs_posgraduacao1, $chs_posgraduacao1_total, $chs_posgraduacao2, $chs_posgraduacao2_total, $apc_graduacao1, $apc_graduacao1_total, $apc_graduacao2, $apc_graduacao2_total, $apc_posgraduacao1, $apc_posgraduacao1_total, $apc_posgraduacao2, $apc_posgraduacao2_total, $aosrt_orientacao1, $aosrt_coorientacao1, $aosrt_supervisao1, $aosrt_perceptuto1, $aosrt_total1, $aosrt_orientacao2, $aosrt_co_orientacao2, $aosrt_supervisao2, $aosrt_perceptuto2, $aosrt_total2, $sa_doc, $sa_matricula, $sa_curso, $sa_tipo, $sa_nivel, $sa_chs1, $sa_chs2, $rtr_doc, $rtr_matricula, $rtr_tipo, $rtr_chs1, $rtr_chs2, $be_doc, $be_descricao, $be_tipo, $be_chs1, $be_chs2, $ad_doc1, $ad_semestre1, $ad_doc2, $ad_semestre, $id);
 
 	if(!$erro){
     	if ($stmt2->execute()) {
@@ -271,7 +275,7 @@ $stmt2 = $conn->prepare("INSERT INTO ensino (chs_graduacao1, chs_pos_graduacao1,
 		// Verifica se o formulário foi submetido
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Gerar o PDF
-    $pdf = new FPDF();
+        $pdf = new FPDF();
     $pdf->AddPage();
 
     //Título
@@ -296,48 +300,78 @@ $stmt2 = $conn->prepare("INSERT INTO ensino (chs_graduacao1, chs_pos_graduacao1,
     $pdf->Cell(0, 10, 'Cálculo da CH semanal de aulas', 0, 1, 'C');
 
     $pdf->SetFont('Arial', 'B', 12);
-    $pdf->Cell(25, 10, 'Semestre', 1, 0, 'C', true);
-    $pdf->Cell(70, 10, 'Graduação', 1, 0, 'C', true);
-    $pdf->Cell(70, 10, 'Pós-Graduação', 1, 0, 'C', true);
-    $pdf->Cell(25, 10, 'Total', 1, 0, 'C', true);
+    $pdf->Cell(50, 10, 'Semestre', 1, 0, 'C', true);
+    $pdf->Cell(90, 10, 'Graduação', 1, 0, 'C', true);
+    $pdf->Cell(50, 10, 'Total', 1, 0, 'C', true);
     $pdf->Ln();
 
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Cell(25, 10, '1ª', 1, 0, 'C', true);
-    $pdf->Cell(70, 10, $chs_graduacao1, 1, 0, 'C');
-    $pdf->Cell(70, 10, $chs_posgraduacao1, 1, 0, 'C');
-    $pdf->Cell(25, 10, $chs_total1, 1, 0, 'C');
+    $pdf->Cell(50, 10, '1ª', 1, 0, 'C', true);
+    $pdf->Cell(90, 10, $chs_graduacao1, 1, 0, 'C');
+    $pdf->Cell(50, 10, $chs_graduacao1_total, 1, 0, 'C');
     $pdf->Ln();
 
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Cell(25, 10, '2ª', 1, 0, 'C', true);
-    $pdf->Cell(70, 10, $chs_graduacao2, 1, 0, 'C');
-    $pdf->Cell(70, 10, $chs_posgraduacao2, 1, 0, 'C');
-    $pdf->Cell(25, 10, $chs_total2, 1, 0, 'C');
+    $pdf->Cell(50, 10, '2ª', 1, 0, 'C', true);
+    $pdf->Cell(90, 10, $chs_graduacao2, 1, 0, 'C');
+    $pdf->Cell(50, 10, $chs_graduacao2_total, 1, 0, 'C');
+    $pdf->Ln();
+
+    $pdf->SetFont('Arial', 'B', 12);
+    $pdf->Cell(50, 10, 'Semestre', 1, 0, 'C', true);
+    $pdf->Cell(90, 10, 'Graduação', 1, 0, 'C', true);
+    $pdf->Cell(50, 10, 'Total', 1, 0, 'C', true);
+    $pdf->Ln();
+
+    $pdf->SetFont('Arial', '', 12);
+    $pdf->Cell(50, 10, '1ª', 1, 0, 'C', true);
+    $pdf->Cell(90, 10, $chs_posgraduacao1, 1, 0, 'C');
+    $pdf->Cell(50, 10, $chs_posgraduacao1_total, 1, 0, 'C');
+    $pdf->Ln();
+
+    $pdf->SetFont('Arial', '', 12);
+    $pdf->Cell(50, 10, '2ª', 1, 0, 'C', true);
+    $pdf->Cell(90, 10, $chs_posgraduacao2, 1, 0, 'C');
+    $pdf->Cell(50, 10, $chs_posgraduacao2_total, 1, 0, 'C');
     $pdf->Ln();
 
     $pdf->SetFont('Arial', 'B', 14);
     $pdf->Cell(0, 10, 'Atividades pedagógicas complementares', 0, 1, 'C');
 
     $pdf->SetFont('Arial', 'B', 12);
-    $pdf->Cell(25, 10, 'Semestre', 1, 0, 'C', true);
-    $pdf->Cell(70, 10, 'Graduação', 1, 0, 'C', true);
-    $pdf->Cell(70, 10, 'Pós-Graduação', 1, 0, 'C', true);
-    $pdf->Cell(25, 10, 'Total', 1, 0, 'C', true);
+    $pdf->Cell(50, 10, 'Semestre', 1, 0, 'C', true);
+    $pdf->Cell(90, 10, 'Graduação', 1, 0, 'C', true);
+    $pdf->Cell(50, 10, 'Total', 1, 0, 'C', true);
     $pdf->Ln();
 
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Cell(25, 10, '1ª', 1, 0, 'C', true);
-    $pdf->Cell(70, 10, $apc_graduacao1, 1, 0, 'C');
-    $pdf->Cell(70, 10, $apc_posgraduacao1, 1, 0, 'C');
-    $pdf->Cell(25, 10, $apc_total1, 1, 0, 'C');
+    $pdf->Cell(50, 10, '1ª', 1, 0, 'C', true);
+    $pdf->Cell(90, 10, $apc_graduacao1, 1, 0, 'C');
+    $pdf->Cell(50, 10, $apc_graduacao1_total, 1, 0, 'C');
     $pdf->Ln();
 
     $pdf->SetFont('Arial', '', 12);
-    $pdf->Cell(25, 10, '2ª', 1, 0, 'C', true);
-    $pdf->Cell(70, 10, $apc_graduacao2, 1, 0, 'C');
-    $pdf->Cell(70, 10, $apc_posgraduacao2, 1, 0, 'C');
-    $pdf->Cell(25, 10, $apc_total2, 1, 0, 'C');
+    $pdf->Cell(50, 10, '2ª', 1, 0, 'C', true);
+    $pdf->Cell(90, 10, $apc_graduacao2, 1, 0, 'C');
+    $pdf->Cell(50, 10, $apc_graduacao2_total, 1, 0, 'C');
+    $pdf->Ln();
+
+    $pdf->SetFont('Arial', 'B', 12);
+    $pdf->Cell(50, 10, 'Semestre', 1, 0, 'C', true);
+    $pdf->Cell(90, 10, 'Graduação', 1, 0, 'C', true);
+    $pdf->Cell(50, 10, 'Total', 1, 0, 'C', true);
+    $pdf->Ln();
+
+    $pdf->SetFont('Arial', '', 12);
+    $pdf->Cell(50, 10, '1ª', 1, 0, 'C', true);
+    $pdf->Cell(90, 10, $apc_posgraduacao1, 1, 0, 'C');
+    $pdf->Cell(50, 10, $apc_posgraduacao1_total, 1, 0, 'C');
+    $pdf->Ln();
+
+    $pdf->SetFont('Arial', '', 12);
+    $pdf->Cell(50, 10, '2ª', 1, 0, 'C', true);
+    $pdf->Cell(90, 10, $apc_posgraduacao2, 1, 0, 'C');
+    $pdf->Cell(50, 10, $apc_posgraduacao2_total, 1, 0, 'C');
     $pdf->Ln();
 
     $pdf->SetFont('Arial', 'B', 14);
@@ -475,8 +509,8 @@ $stmt2 = $conn->prepare("INSERT INTO ensino (chs_graduacao1, chs_pos_graduacao1,
     $pdf->Ln();
 
 
-    	// Adicionando link para download do PDF
-    	$pdf->Output('ensino.pdf', 'D');
+    // Adicionando link para download do PDF
+    $pdf->Output('ensino.pdf', 'D');
 	}else {
     	// Se o formulário não foi submetido, redireciona de volta para a página anterior
     	header("Location: index.html");
