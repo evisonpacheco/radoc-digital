@@ -27,6 +27,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			window.location.replace('pagina-adm.php');
 			</script>";
 	}
+} else {
+	$email = $_SESSION["user_email"];
+		
+	$result_of_email_check = mysqli_query ($conn, "SELECT user_name, user_registration, user_nivel 
+												  FROM registro WHERE user_email='". $email ."'");
+		
+	if ($result_of_email_check->num_rows == 1) {
+		
+		$result_row = $result_of_email_check->fetch_object();
+		
+		$nome = $result_row->user_name;
+		$matricula = $result_row->user_registration;
+		
+		if($result_row->user_nivel == 1){
+			$nivel = 'Administrador';
+		} else {
+			$nivel = 'Docente';
+		}
+	}
 }
 		
 ?>
