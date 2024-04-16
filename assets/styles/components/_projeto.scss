@@ -53,6 +53,24 @@
       flex-direction: column;
       height: calc(100vh - 7rem);
       justify-content: space-between;
+
+      .sidemenu__logout {
+        background-color: #D63939;
+        border: 1px solid transparent;
+        padding: 1rem 0;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+          border: 1px solid #F7F7F7;
+          cursor: pointer;
+        }
+
+        &--button {
+          color: #F7F7F7;
+          text-decoration: none;
+        }
+      }
     }
 
     &__list {
@@ -80,28 +98,78 @@
         }
       }
     }
-
-    .sidemenu__logout {
-      background-color: #D63939;
-      border: 1px solid transparent;
-      color: #f7f7f7;
-      padding: 1rem 0;
-      text-align: center;
-
-      &:hover {
-        border: 1px solid #F7F7F7;
-        cursor: pointer;
-      }
-    }
   }
 
   .projetopage {
     width: calc(100vw - 17.525rem);
-  
+
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    .projetoform {
+      font: 1rem 'Arial';
+      padding: 1rem 0;
+
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &__title {
+        font: 1.4rem 'Arial';
+      }
+
+      &__element {
+        padding: 1rem 0;
+        
+        display: flex;
+        justify-content: space-between;
+
+        &--input {
+          border-radius: 10px;
+          height: 1rem;
+          margin-left: 1rem;
+          text-align: center;
+          width: 20rem;
+        }
+      }
+
+      &__button {
+        margin: 0 auto;
+        background-color: #27A844;
+        border: 2px solid transparent;
+        color: #FFFFFF;
+        font: 1rem 'Arial';
+        margin: 0.5rem 0;
+        padding: 0.5rem 3rem;
+        justify-content: center;
+
+        &:hover {
+          border: 2px solid #000000;
+          cursor: pointer;
+        }
+      }
+
+      .navigation {
+        margin: 1rem;
+
+        &__button {
+          background-color: #27A844;
+          border: 1px solid transparent;
+          color: #FFFFFF;
+          font: 1rem 'Arial';
+          margin: 0 1rem;
+          padding: 0.5rem 3rem;
+
+          &:hover {
+            border: 1px solid #000000;
+            cursor: pointer;
+          }
+        }
+      }
+    }
 
     &__title {
       background-color: #008A8A;

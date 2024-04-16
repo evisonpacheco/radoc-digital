@@ -740,6 +740,21 @@ input[type=number] {
   height: calc(100vh - 7rem);
   justify-content: space-between;
 }
+.mainprojeto .sidemenu__flex .sidemenu__logout {
+  background-color: #D63939;
+  border: 1px solid transparent;
+  padding: 1rem 0;
+  text-align: center;
+  text-decoration: none;
+}
+.mainprojeto .sidemenu__flex .sidemenu__logout:hover {
+  border: 1px solid #F7F7F7;
+  cursor: pointer;
+}
+.mainprojeto .sidemenu__flex .sidemenu__logout--button {
+  color: #F7F7F7;
+  text-decoration: none;
+}
 .mainprojeto .sidemenu__list {
   display: flex;
   flex-direction: column;
@@ -763,23 +778,64 @@ input[type=number] {
   cursor: pointer;
   font-weight: bold;
 }
-.mainprojeto .sidemenu .sidemenu__logout {
-  background-color: #D63939;
-  border: 1px solid transparent;
-  color: #f7f7f7;
-  padding: 1rem 0;
-  text-align: center;
-}
-.mainprojeto .sidemenu .sidemenu__logout:hover {
-  border: 1px solid #F7F7F7;
-  cursor: pointer;
-}
 .mainprojeto .projetopage {
   width: calc(100vw - 17.525rem);
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.mainprojeto .projetopage .projetoform {
+  font: 1rem "Arial";
+  padding: 1rem 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mainprojeto .projetopage .projetoform__title {
+  font: 1.4rem "Arial";
+}
+.mainprojeto .projetopage .projetoform__element {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.mainprojeto .projetopage .projetoform__element--input {
+  border-radius: 10px;
+  height: 1rem;
+  margin-left: 1rem;
+  text-align: center;
+  width: 20rem;
+}
+.mainprojeto .projetopage .projetoform__button {
+  margin: 0 auto;
+  background-color: #27A844;
+  border: 2px solid transparent;
+  color: #FFFFFF;
+  font: 1rem "Arial";
+  margin: 0.5rem 0;
+  padding: 0.5rem 3rem;
+  justify-content: center;
+}
+.mainprojeto .projetopage .projetoform__button:hover {
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+.mainprojeto .projetopage .projetoform .navigation {
+  margin: 1rem;
+}
+.mainprojeto .projetopage .projetoform .navigation__button {
+  background-color: #27A844;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+  font: 1rem "Arial";
+  margin: 0 1rem;
+  padding: 0.5rem 3rem;
+}
+.mainprojeto .projetopage .projetoform .navigation__button:hover {
+  border: 1px solid #000000;
+  cursor: pointer;
 }
 .mainprojeto .projetopage__title {
   background-color: #008A8A;
