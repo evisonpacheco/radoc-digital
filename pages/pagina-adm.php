@@ -5,8 +5,7 @@ include 'login_verification.php';
 $nivel = $_SESSION['user_nivel'];
 
 if ($nivel != 1) {
-	echo "               Esta página só pode ser acessada por administradores.";
-	header("Refresh: 4; url=home.php");
+	header("Location:info-doc.php");
 	exit();
 }
 ?>
