@@ -75,7 +75,7 @@ include 'login_verification.php';
    
         <nav class="navigation">
           <input class="navigation__button" type="submit" value="Salvar">
-          <input class="navigation__button" type="button" value="Resetar">
+          <input class="navigation__button" type="reset" value="Resetar">
               </nav>
         </form>
     </div>
