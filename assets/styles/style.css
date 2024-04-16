@@ -253,21 +253,8 @@ table {
 .bodyhome .homemain .homeform .homeform-one__element input {
   text-align: center;
 }
-.bodyhome .homemain .homeform .expand__button {
-  margin: 0 auto;
-  background-color: #27A844;
-  border: 1px solid transparent;
-  color: #FFFFFF;
-  font: 1rem "Arial";
-  padding: 0.5rem 3rem;
-  justify-content: center;
-}
-.bodyhome .homemain .homeform .expand__button:hover {
-  border: 1px solid #000000;
-  cursor: pointer;
-}
 .bodyhome .homemain .homeform .navigation {
-  margin: 0 0 1rem;
+  margin: 0;
   display: flex;
 }
 .bodyhome .homemain .homeform .navigation__button {
@@ -275,10 +262,23 @@ table {
   border: 1px solid transparent;
   color: #FFFFFF;
   font: 1rem "Arial";
-  margin: 0 auto;
+  margin: 1rem 1rem 0;
   padding: 0.5rem 3rem;
 }
 .bodyhome .homemain .homeform .navigation__button:hover {
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+.bodyhome .homemain .expand__button {
+  background-color: #27A844;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+  font: 1rem "Arial";
+  margin: 0 auto 2rem;
+  padding: 0.5rem 3rem;
+  width: 15rem;
+}
+.bodyhome .homemain .expand__button:hover {
   border: 1px solid #000000;
   cursor: pointer;
 }
@@ -531,6 +531,23 @@ table {
 .ensinopage .ensinotable__input {
   text-align: center;
   width: 6rem;
+}
+.ensinopage .navigation {
+  margin: 0 0 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.ensinopage .navigation__button {
+  background-color: #27A844;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+  font: 1rem "Arial";
+  margin: 1rem 1rem 0;
+  padding: 0.5rem 3rem;
+}
+.ensinopage .navigation__button:hover {
+  border: 1px solid #000000;
+  cursor: pointer;
 }
 
 input[type=number]::-webkit-inner-spin-button {

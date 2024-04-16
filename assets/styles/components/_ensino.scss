@@ -46,6 +46,27 @@
       width: 6rem;
     }
   }
+
+  .navigation {
+    margin: 0 0 2rem;
+
+    display: flex;
+    justify-content: space-around;
+
+    &__button {
+      background-color: #27A844;
+      border: 1px solid transparent;
+      color: #FFFFFF;
+      font: 1rem 'Arial';
+      margin: 1rem 1rem 0;
+      padding: 0.5rem 3rem;
+
+      &:hover {
+        border: 1px solid #000000;
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 input[type=number]::-webkit-inner-spin-button {

@@ -167,23 +167,8 @@
         }
       }
 
-      .expand__button {
-        margin: 0 auto;
-        background-color: #27A844;
-        border: 1px solid transparent;
-        color: #FFFFFF;
-        font: 1rem 'Arial';
-        padding: 0.5rem 3rem;
-        justify-content: center;
-
-        &:hover {
-          border: 1px solid #000000;
-          cursor: pointer;
-        }
-      }
-
       .navigation {
-        margin: 0 0 1rem;
+        margin: 0;
 
         display: flex;
 
@@ -192,7 +177,7 @@
           border: 1px solid transparent;
           color: #FFFFFF;
           font: 1rem 'Arial';
-          margin: 0 auto;
+          margin: 1rem 1rem 0;
           padding: 0.5rem 3rem;
 
           &:hover {
@@ -202,6 +187,21 @@
         }
       }
 
+    }
+
+    .expand__button {
+      background-color: #27A844;
+      border: 1px solid transparent;
+      color: #FFFFFF;
+      font: 1rem 'Arial';
+      margin: 0 auto 2rem;
+      padding: 0.5rem 3rem;
+      width: 15rem;
+
+      &:hover {
+        border: 1px solid #000000;
+        cursor: pointer;
+      }
     }
   }
 }

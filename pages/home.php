@@ -10,7 +10,7 @@ $nome = $_SESSION['user_name'];
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página Inicial</title>
   <link rel="stylesheet" href="../assets/styles/style.css">
-  <script src="../script.js" defer></script>
+  <script src="../assets/scripts/ensinobutton.js" defer></script>
 </head>
 
 <body class="bodyhome">
@@ -33,7 +33,8 @@ $nome = $_SESSION['user_name'];
           <a href="./academica.php" class="sidemenu__element">Acadêmica</a>
           <a href="./administrativa.php" class="sidemenu__element">Administrativo</a>
         </ul>
-        <div id="sair" class="sidemenu__logout"><a class="sidemenu__logout--button" href="../logoff-session.php">SAIR</a></div>
+        <div id="sair" class="sidemenu__logout"><a class="sidemenu__logout--button"
+            href="../logoff-session.php">SAIR</a></div>
       </div>
     </div>
     <div class="homepage">
@@ -44,14 +45,6 @@ $nome = $_SESSION['user_name'];
           <?php echo $nome; ?>!
         </div>
       </div>
-
-      <hr>
-
-      <a class="edit-profile__link" href="../profile/edit-profile.php">
-        <button class="edit-profile__button">Editar Perfil</button>
-      </a>
-
-      <hr>
 
       <form class="homeform" action="../pages-back/pages.php" method="post">
         <input type="hidden" name="formulario" value="1">
@@ -157,7 +150,7 @@ $nome = $_SESSION['user_name'];
         <button onclick="changeName();" placeholder="0" type="button" class="expand__button" id="expand__button">&#9196;
           Expandir
           &#9196;</button>
-        <div class="ensinopage" style="display:block;">
+    <div class="ensinopage" style="display:none;">
           <p class="ensinopage__title">ENSINO</p>
           <form action="../pages-back/pages.php" method="post">
           <input type="hidden" name="formulario" value="2">
@@ -298,8 +291,8 @@ $nome = $_SESSION['user_name'];
             </tr>
             <tr>
               <td><input class="ensinotable--sa__input" placeholder="0" type="text" name="sa_doc" id="sa_doc"></td>
-              <td><input class="ensinotable--sa__input" placeholder="0" type="text" name="sa_matricula"
-                  id="sa_matricula"></td>
+            <td><input class="ensinotable--sa__input" placeholder="0" type="text" name="sa_matricula" id="sa_matricula">
+            </td>
               <td><input class="ensinotable--sa__input" placeholder="0" type="text" name="sa_curso" id="sa_curso"></td>
               <td><input class="ensinotable--sa__input" placeholder="0" type="text" name="sa_tipo" id="sa_tipo"></td>
               <td><input class="ensinotable--sa__input" placeholder="0" type="text" name="sa_nivel" id="sa_nivel"></td>
