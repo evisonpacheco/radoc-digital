@@ -1604,4 +1604,153 @@ input[type=number] {
 }
 .bodyadministrativa .administrativaform .navigation__button--reset {
   background-color: #D63939;
+}
+
+.bodyadmin {
+  background-color: #F7F7F7;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bodyadmin .headeradmin {
+  background-color: #27A844;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.bodyadmin .headeradmin__image {
+  height: 3rem;
+  width: 3rem;
+  padding: 0.5rem 0.5rem;
+}
+.bodyadmin .headeradmin__title {
+  color: #F7F7F7;
+  font: 1rem "Arial";
+  height: 2rem;
+  align-items: center;
+  display: flex;
+}
+.bodyadmin .mainadmin {
+  display: flex;
+  flex-direction: row;
+}
+.bodyadmin .mainadmin .sidemenu {
+  width: 15%;
+}
+.bodyadmin .mainadmin .sidemenu__title {
+  background-color: #008A8A;
+  border-right: 1px solid #F7F7F7;
+  color: #F7F7F7;
+  font: 1rem "Arial";
+  height: 2rem;
+  padding: 0.5rem 3rem;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.bodyadmin .mainadmin .sidemenu__flex {
+  background-color: #008A8A;
+  flex-direction: column;
+  height: calc(100vh - 7rem);
+  display: flex;
+  justify-content: space-between;
+}
+.bodyadmin .mainadmin .sidemenu__flex .sidemenu__logout {
+  background-color: #D63939;
+  border: 1px solid transparent;
+  padding: 1rem 0;
+  text-align: center;
+  text-decoration: none;
+}
+.bodyadmin .mainadmin .sidemenu__flex .sidemenu__logout:hover {
+  border: 1px solid #F7F7F7;
+  cursor: pointer;
+}
+.bodyadmin .mainadmin .sidemenu__flex .sidemenu__logout--button {
+  color: #F7F7F7;
+  text-decoration: none;
+}
+.bodyadmin .mainadmin .sidemenu__list {
+  display: flex;
+  flex-direction: column;
+}
+.bodyadmin .mainadmin .sidemenu__list .sidemenu__element {
+  background-color: #F7F7F7;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #008A8A;
+  color: #000000;
+  min-height: 3rem;
+  padding: 0 0.5rem;
+  text-decoration: none;
+  text-align: left;
+  align-items: center;
+  display: flex;
+}
+.bodyadmin .mainadmin .sidemenu__list .sidemenu__element:hover {
+  background-color: #C4C4C4;
+  border-right: 1px solid #008A8A;
+  color: #008A8A;
+  cursor: pointer;
+  font-weight: bold;
+}
+.bodyadmin .mainadmin .adminpage {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+.bodyadmin .mainadmin .adminpage__info {
+  background-color: #008A8A;
+  color: #F7F7F7;
+  font: 1rem "Arial";
+  height: 2rem;
+  padding: 0.5rem 3rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.bodyadmin .adminform {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.bodyadmin .adminform__title {
+  font: 1.25rem "Arial";
+  height: 2rem;
+  padding: 0.5rem;
+  align-items: center;
+  display: flex;
+}
+.bodyadmin .adminform__element {
+  padding: 0.5rem 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.bodyadmin .adminform__input {
+  margin: 0.5rem;
+  text-align: center;
+  width: auto;
+}
+.bodyadmin .adminform__input--textarea {
+  height: 5rem;
+  text-align: left;
+  width: 20rem;
+}
+.bodyadmin .adminform .navigation {
+  margin: 0 auto;
+}
+.bodyadmin .adminform .navigation__button {
+  background-color: #27A844;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+  font: 1rem "Arial";
+  margin: 1rem 1rem 2rem;
+  padding: 0.5rem 3rem;
+}
+.bodyadmin .adminform .navigation__button:hover {
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+.bodyadmin .adminform .navigation__button--reset {
+  background-color: #D63939;
 }/*# sourceMappingURL=style.css.map */
