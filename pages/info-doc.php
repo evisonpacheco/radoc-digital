@@ -52,6 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,18 +60,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <link rel="stylesheet" href="../assets/styles/style.css">
   <script src="../script.js" defer></script>
 </head>
-<body class="bodyhome">
-  <header class="headerhome">
-    <img class="headerhome__image" src="../assets/images/login/logoufra.svg" alt="Logo da UFRA">
-    <p class="headerhome__title">UFRA - Universidade Federal Rural da Amazônia</p>
+
+<body class="bodyinfo">
+	<header class="headerinfo">
+		<img class="headerinfo__image" src="../assets/images/login/logoufra.svg" alt="Logo da UFRA">
+		<p class="headerinfo__title">UFRA - Universidade Federal Rural da Amazônia</p>
   </header>
-  <main class="mainhome">
+	<main class="maininfo">
     <div class="sidemenu">
       <div class="sidemenu__title">MENU PRINCIPAL</div>
       <div class="sidemenu__flex">
         <ul class="sidemenu__list">
-          <a href="home.php" class="sidemenu__element">Página Inicial</a>
-		      <a href="./editar-dados.php" class="sidemenu__element" style="text-decoration:none;color:inherit;" >Editar dados</a>
+					<a href="./home.php" class="sidemenu__element">Página Inicial</a>
+					<a href="./editar-dados.php" class="sidemenu__element">Editar
+						dados</a>
           <a href="./orientacao.php" class="sidemenu__element">Orientação</a>
           <a href="./projeto.php" class="sidemenu__element">Projeto</a>
           <a href="./extensao.php" class="sidemenu__element">Extensão</a>
@@ -80,22 +83,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <a href="./administrativa.php" class="sidemenu__element">Administrativo</a>
 		  <a href="./pagina-adm.php" class="sidemenu__element">Página Administrativa</a>
         </ul>
-        <div id="sair" class="sidemenu__logout"><a style="text-decoration:none;color:#F7F7F7;" href="../logoff-session.php">SAIR</a></div>
+				<div id="sair" class="sidemenu__logout"><a class="sidemenu__logout--button"
+						href="../logoff-session.php">SAIR</a></div>
       </div>
     </div>
-    <div class="homepage">
-      <div class="homepage__info">
-        <h2 class="homepage__title">Página Administrativa - Dados do docente</h2>
+		<div class="infopage">
+			<div class="infopage__info">
+				<h2 class="infopage__title">Página Administrativa - Dados do docente</h2>
       </div>
 	  
-	  <div class="doc_info">
+			<div class="infopage__docs">
 	  <?php echo "Matrícula: " . $matricula . " - Nome: " . $nome . " - E-mail: " . $email . " - Nível de permissão: " . $nivel . ""; ?>
 	  </div>
-	  
-	  </div>
-
-      </div>
     </div>
   </main>
 </body>
+
 </html>
