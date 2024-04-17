@@ -8,7 +8,7 @@
     <script src="script.js" defer></script>
 </head>
 <body class="bodyregister">
-    <form class="form" action="register-session.php" method="post">
+    <form class="form" action="../pages-back/register-session.php" method="post">
         <h1 class="form__title">Preencha os campos obrigatórios</h1>
         
         <div class="form__field">
@@ -35,6 +35,10 @@
             <label class="form__field-label" for="user_confirm"></label>
             <input class="form__field-input" type="password" maxlength="12" placeholder="Confirmar senha" name="user_confirm" id="user_confirm" required>
         </div>
+
+        <input type="hidden" id="cppd_check" name="cppd_check" value="0" />
+		<input type="checkbox" id="cppd_check" name="cppd_check" value="1"> 
+		<label for="cppd_check" style="color:white;">CPPD</label><br>
 
           <button class="form__button form__button--register" type="submit">Registrar</button>
           <button class="form__button form__button--reset" type="reset">Resetar</button>
