@@ -34,7 +34,7 @@ include 'login_verification.php';
           <a href="./administrativa.php" class="sidemenu__element">Administrativo</a>
           <a href="./pagina-adm.php" class="sidemenu__element">Página Administrativa</a>
         </ul>
-        <div id="sair" class="sidemenu__logout"><a href="../logoff-session.php">SAIR</a></div>
+        <div id="sair" class="sidemenu__logout"><a class="sidemenu__logout--button" href="../logoff-session.php">SAIR</a></div>
       </div>
     </div>
     <div class="gestaopage">
