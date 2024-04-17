@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION["user_name"])) {
-  header("Location: index.html");
+  header("Location: ..\index.html");
   exit;
 }
 ?>
@@ -48,7 +48,7 @@ if (!isset($_SESSION["user_name"])) {
 				echo "-   -   -   -   -   VALIDE SEU E-MAIL PARA DESBLOQUEAR 
 					  AS FUNCIONALIDADES DO SISTEMA EM SUA CONTA   -   -   -   -   -";
 			} ?>
-      <form class="editarform" action="../mudar-email.php" method="post">
+      <form class="editarform" action="./process-profile.php" method="post">
         <p class="editarform__title">Mudar Senha</p>
         <div class="editarform__element">
           <label class="editarform__element--label" for="user_name"></label>
@@ -72,7 +72,7 @@ if (!isset($_SESSION["user_name"])) {
         <button class="editarform__button" type="reset">Resetar</button>
       </form>
 
-      <form class="form" action="../mudar-email.php" method="post">
+      <form class="form" action="../pages-back/mudar-email.php" method="post">
         <p class="editarform__title">Mudar Email</p>
         <div class="editarform__element">
           <label class="editarform__element--label" for="email_enviado"></label>
