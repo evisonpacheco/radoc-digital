@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$matricula = $result_row->user_registration;
 		
 		if($result_row->user_nivel == 1){
-			$nivel = 'Administrador';
+			$nivel = 'CPPD';
 		} else {
 			$nivel = 'Docente';
 		}
@@ -93,7 +93,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
 	  
 			<div class="infopage__docs">
-	  <?php echo "Matrícula: " . $matricula . " - Nome: " . $nome . " - E-mail: " . $email . " - Nível de permissão: " . $nivel . ""; ?>
+	  <?php echo "Matrícula: " . $matricula . " <br> Nome: " . $nome . " <br> E-mail: " . $email . " <br> Nível de permissão: " . $nivel . ""; ?>
 	  </div>
     </div>
   </main>
