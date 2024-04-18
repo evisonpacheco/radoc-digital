@@ -61,10 +61,10 @@ include 'login_verification.php';
             <tr>
             <td></td>
               <td>
-                <input class="extensaotable__input" type="radio" name="ext_leader_project1" id="ext_coordenador1">
-              <label for="orientador1">Coordenador</label>
-                <input class="extensaotable__input" type="radio" name="ext_leader_project1" id="ext_colaborador1">
-              <label for="coordenador1">Colaborador</label>
+                <input class="extensaotable__input" type="radio" name="ext_leader_project1" id="ext_leader_project1" value="Coordenador">
+              <label for="ext_leader_project1">Coordenador</label>
+                <input class="extensaotable__input" type="radio" name="ext_leader_project1" id="ext_leader_project1" value="Colaborador">
+              <label for="ext_leader_project1">Colaborador</label>
               </td>
             </tr>
             
@@ -81,10 +81,10 @@ include 'login_verification.php';
             <tr>
               <td></td>
               <td>
-                <input class="extensaotable__input" type="radio" name="ext_leader_project2" id="ext_coordenador2">
-              <label for="orientador2">Coordenador</label>
-                <input class="extensaotable__input" type="radio" name="ext_leader_project2" id="ext_colaborador2">
-              <label for="coordenador2">Colaborador</label>
+                <input class="extensaotable__input" type="radio" name="ext_leader_project2" id="ext_leader_project2" value="Coordenador">
+              <label for="ext_leader_project2">Coordenador</label>
+                <input class="extensaotable__input" type="radio" name="ext_leader_project2" id="ext_leader_project2"  value="Colaborador">
+              <label for="ext_leader_project2">Colaborador</label>
               </td>
             </tr>
           </table>
