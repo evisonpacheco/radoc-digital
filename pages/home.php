@@ -32,6 +32,7 @@ $nome = $_SESSION['user_name'];
           <a href="./qualificação.php" class="sidemenu__element">Qualificação</a>
           <a href="./academica.php" class="sidemenu__element">Acadêmica</a>
           <a href="./administrativa.php" class="sidemenu__element">Administrativo</a>
+          <a href="./pagina-adm.php" class="sidemenu__element">Página Administrativa</a>
         </ul>
         <div id="sair" class="sidemenu__logout"><a class="sidemenu__logout--button"
             href="../logoff-session.php">SAIR</a></div>
@@ -308,7 +309,7 @@ $nome = $_SESSION['user_name'];
               <th>Matrícula</th>
               <th>Tipo</th>
               <th>CH semanal <br> 1º semestre</th>
-              <th>CH semanal <br> 1º semestre</th>
+              <th>CH semanal <br> 2º semestre</th>
             </tr>
             <tr>
               <td><input class="ensinotable__input" placeholder="0" type="text" name="rtr_doc" id="rtr_doc"></td>
@@ -324,10 +325,10 @@ $nome = $_SESSION['user_name'];
             <caption class="ensinotable__title">Banca Examinadora</caption>
             <tr>
               <th>Nº do DOC</th>
-              <th>Descrição</th>
+              <th>Matrícula</th>
               <th>Tipo</th>
               <th>CH semanal <br> 1º semestre</th>
-              <th>CH semanal <br> 1º semestre</th>
+              <th>CH semanal <br> 2º semestre</th>
             </tr>
             <tr>
               <td><input class="ensinotable__input" placeholder="0" type="text" name="be_doc" id="be_doc"></td>
