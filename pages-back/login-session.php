@@ -30,21 +30,25 @@ if (!empty($_POST['user_email']) && !empty($_POST['user_password'])) {
 						header("Location: ../pages/home.php");
 						exit();
 					} elseif(!isset($_SESSION['user_name'])){
-						echo "Não foi possível realizar o login, tente novamente.";
-						header("Refresh: 3; url=..\index.html");
+						echo "<script type='text/javascript'>
+							alert('Não foi possível realizar o login, tente novamente.');
+							window.history.back();
+							</script>";
 						exit();
 					}
 						
 				} else {
-					echo "Senha incorreta.";
-					header("Refresh: 3; url=..\index.html");
-					exit();
+					echo "<script type='text/javascript'>
+							alert('Senha incorreta.');
+							window.history.back();
+							</script>";
 				  }
-				} else {
-					echo "Usuário incorreto ou não cadastrado.";
-					header("Refresh: 3; url=..\index.html");
-					exit();
-					}
+			} else {
+				echo "<script type='text/javascript'>
+						alert('Usuário incorreto ou não cadastrado.');
+						window.history.back();
+						</script>";
+				}
 }
 		  
 $conn->close();
