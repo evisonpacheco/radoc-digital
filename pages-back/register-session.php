@@ -24,13 +24,13 @@ if($result_of_registration_check->num_rows != 0){
 	$erro = true;
 	echo "<script type='text/javascript'>
 			alert('Esta matrícula já está cadastrada.');
-			window.location.replace('../pages/register.html');
+			window.history.back();
 		</script>";
 } elseif($result_of_email_check->num_rows != 0){
 	$erro = true;
 	echo "<script type='text/javascript'>
 			alert('Este e-mail já está cadastrado.');
-			window.location.replace('../pages/register.html');
+			window.history.back();
 		</script>";
 } elseif($cppd == 1){
 	$result_of_cppd_check = mysqli_query ($conn, "SELECT email_cppd FROM cppd WHERE email_cppd='". $email ."'");
@@ -39,7 +39,7 @@ if($result_of_registration_check->num_rows != 0){
 	$erro = true;
 	echo "<script type='text/javascript'>
 			alert('Este e-mail não está cadastrado como CPPD.');
-			window.location.replace('../pages/register.html');
+			window.history.back();
 		</script>";
 	};
 };
